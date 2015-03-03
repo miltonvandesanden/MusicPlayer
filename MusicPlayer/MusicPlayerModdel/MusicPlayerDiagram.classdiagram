@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="87d31824-c8ad-4aa8-ae15-cf1731472a51" name="MusicPlayerDiagram" linkedPackageId="cd7b33d9-8478-4cab-91e7-50db1ed00221" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="d4a7796c-383d-40e7-9390-607ba5890762">
+      <profileInstance Id="9b12366a-e151-41c5-aaba-d672a94cf16e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="020e33ec-a920-4032-935f-2be51f07ca89">
+      <profileInstance Id="2270db55-f2a6-4eb3-90cd-c1e926df4ef1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9c514d04-e0d4-4dbe-a13d-117158e5439d" name="MusicPlayer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0418bcf2-56b1-4bd6-9b50-b68c53293204" />
+        <targetEnds>
+          <association Id="50ba326b-bf1a-4a7b-af7f-6a1aff3ed8f3" isDerived="false" sourceEndRoleName="MusicPlayer" targetEndRoleName="Song" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d7e45558-fc42-46b1-929e-d5ec315b9442" LastKnownName="Song" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a78fe7aa-3a06-42ef-905e-e40afdd1c210" name="MusicPlayer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="85b5a7e2-e100-44f4-a352-325d44a06aa8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25b926b1-9e09-4a0c-ba4c-82035b0cf2cf" name="Song" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="d76f9a46-2f4a-4960-a90b-92ea9c00d16f" name="Lower" value="*">
+                      <elementDefinition Id="2717b24c-4ce1-426a-91f6-9fbd3164ab12" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="db85f288-5199-44e6-a3e0-6a035c510a7c" name="Upper" value="*">
+                      <elementDefinition Id="1d334601-3ff6-4918-a984-45cad41e6b40" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="bc19d9c6-fe43-4b98-b61e-faf995ca728f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ad52a557-a958-457d-a942-048b97303e8f" />
+          </association>
+          <association Id="f9511e46-6412-40e1-a1e9-0c0ceb83cd03" isDerived="false" sourceEndRoleName="MusicPlayer" targetEndRoleName="Artist" isLeaf="false" isAbstract="false">
+            <classMoniker Id="94b363d0-06d7-400a-bee1-b1fd53f8db75" LastKnownName="Artist" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="acbe8cb8-2806-47b5-b1ab-909a9cf2bcf8" name="MusicPlayer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="56a80260-b8fd-45e3-bcaf-06e24b7793fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00df7cfa-b1ca-421d-9f54-3b3ff5b769c6" name="Artist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="26195229-9984-4c94-b58b-d8e3c3ed048d" name="Lower" value="*">
+                      <elementDefinition Id="13a607ee-68de-44b9-b897-bc0393e29687" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="64668282-a460-4780-9390-fcbaf60d0cee" name="Upper" value="*">
+                      <elementDefinition Id="2f4debd9-7aaf-4693-ae63-0ea786b1943b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="59be4964-ef0e-4328-ab2b-8fcd63e1c5b7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a0cf82df-bc22-4a94-be20-567081dfcca0" />
+          </association>
+          <association Id="e643360e-7586-4734-b97d-d137ebbc850b" isDerived="false" sourceEndRoleName="MusicPlayer" targetEndRoleName="Playlist" isLeaf="false" isAbstract="false">
+            <classMoniker Id="44a625f9-066e-4440-ae46-b598df9029bb" LastKnownName="Playlist" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0fb9ad23-530b-4547-a007-cd9bb10de8de" name="MusicPlayer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f96002d3-d235-4c31-be67-f8d007705512" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e935052-bcd6-416b-b151-5f3fb27145a7" name="Playlist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="3c7a7225-fd6e-4b69-b7a0-36103e7d3de4" name="Lower" value="*">
+                      <elementDefinition Id="2b18277c-6a60-445d-90f1-a24816a18bf6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="75d133ec-34d7-4bc8-84cd-5bff4ad2518a" name="Upper" value="*">
+                      <elementDefinition Id="1c941e8e-fbfb-43b0-b701-51c0658cbbaa" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="971a275f-324d-46b5-9066-036a80afa719" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="292b5300-7818-431b-8b9f-dc0bb671273e" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="91d0dd48-c086-446f-98bf-5fa456d7f7e2" name="MusicPlayer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5907eb71-ccfd-491c-b42f-3ca71d71fd7f" />
+          </operation>
+          <operation Id="327a9e6b-548d-41bb-b37a-81f7dfa6d864" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c417ec43-25ad-44dd-b5df-b3564a77d379" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0d217524-02ad-4200-b7e2-2d8eb0002056" name="artist" direction="In" isUnique="false">
+                  <elementDefinition Id="32dc5595-c759-48cf-bf99-568c2ac2d1a2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5b8f747a-d12a-4140-bda1-90099716b25d" LastKnownName="Artist" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5205e067-a079-4b7e-a5bb-80ff90bab3a8" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e02df25e-977c-4cef-9fc2-f86454457e55" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a5cad349-d332-47d6-af85-27af2927a4e1" name="song" direction="In" isUnique="false">
+                  <elementDefinition Id="ced1b351-b6a9-4b1a-9750-5e7a3bcfbf27" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="83821847-7a50-46d3-9371-b1ec2cf8352a" LastKnownName="Song" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="71cab201-e586-423d-8e52-a655f654b334" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="347d2da8-0588-438f-a592-07e1d171f2ba" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f6148e61-7151-45a5-ad07-83d6bb4e15e5" name="playlist" direction="In" isUnique="false">
+                  <elementDefinition Id="b6cdd08a-14bd-4344-ac1a-51e63006cc6d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ee506b3f-3939-4450-9378-954bfc856a7b" LastKnownName="Playlist" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d655f92b-1c77-41b0-8435-3490d771d168" name="Play" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="327fc91c-aa7a-416f-aca7-97948944a1cc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4e585903-ec98-4936-b956-8fca79d98746" name="song" direction="In" isUnique="false">
+                  <elementDefinition Id="b36afcf8-4163-4b06-b4df-1c70ad6a71ae" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="30c44554-a29e-4bdf-87e0-6aee51397f3d" LastKnownName="Song" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f038c169-dd3f-463b-9657-853a15db0400" name="Play" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d7fbf31c-2835-444c-9d37-a5fb530f3667" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3e869ac0-2d43-4141-b4a7-54573163ba4d" name="platlist" direction="In" isUnique="false">
+                  <elementDefinition Id="f8da0e60-1640-4087-adfb-8b78ba8c082d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="94a772cf-d137-444d-ab48-a7351e10b945" LastKnownName="Playlist" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6c8fac82-405e-4e15-93b0-7cd0d67d7faf" name="Playing" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="940b42d5-3bd9-4788-8cc4-18ec93dc026e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="66ef8588-e769-4271-8221-e5fd2e5e8079" direction="Return" isUnique="false">
+                  <elementDefinition Id="98ab2184-087d-492e-84f6-753354e41eb6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="30c44554-a29e-4bdf-87e0-6aee51397f3d" LastKnownName="Song" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="90ccf4d3-0de8-454a-9c73-83f43a1987c4" name="StopPlaying" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48c11899-131f-44d2-b53b-81403d019044" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="8f780e60-2c91-47b9-95ad-1d9a4f7d7904" name="Artist" isAbstract="false" isLeaf="false" cachedFullName="Artist">
+        <elementDefinition Id="e5a778a5-5fa6-439c-be9c-73ad60feee05" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="30c44554-a29e-4bdf-87e0-6aee51397f3d" name="Song" isAbstract="false" isLeaf="false" cachedFullName="Song">
+        <elementDefinition Id="ab95bcd0-1bc0-4cad-905b-50cd78f57f94" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="94a772cf-d137-444d-ab48-a7351e10b945" name="Playlist" isAbstract="false" isLeaf="false" cachedFullName="Playlist">
+        <elementDefinition Id="1226144d-32ca-4dad-856d-8cd8ee6183ca" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d7e45558-fc42-46b1-929e-d5ec315b9442" name="Song" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cadcc528-fecc-422d-856a-81e9c95439e6" />
+        <targetEnds>
+          <association Id="95f65834-ebe7-4cd5-8aeb-ee79acaf471c" isDerived="false" sourceEndRoleName="Song" targetEndRoleName="Artist" isLeaf="false" isAbstract="false">
+            <classMoniker Id="94b363d0-06d7-400a-bee1-b1fd53f8db75" LastKnownName="Artist" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b92c0950-273e-4074-a7e0-2b29303caafc" name="Song" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="4e4a0f01-cf7f-4268-ad69-bce3b6153abb" name="Lower" value="*">
+                      <elementDefinition Id="0a0070ef-8d38-421e-ac17-3212e4f70322" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c0f4e956-53ba-4186-b66c-64496101d9fd" name="Upper" value="*">
+                      <elementDefinition Id="e5ba8592-5d96-4141-be53-9475d38f92c6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cc6730c9-301e-4010-be8f-4a45c0c99d5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7d446eaf-0e5b-4291-b34a-15ecb8b532f7" name="Artist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e88dd9f6-b89e-405a-ba2d-a310853bb8f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="227ad4c4-7781-40bd-b9c1-715c1db9f419" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="31d29dc2-42eb-49db-8b46-51c560215369" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1a9404bb-e091-4d10-88b0-75582e214480" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="569c524b-2592-4033-86b7-c3f8ff6ed001" name="Year" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1af051cd-e07d-4628-87ab-498df2a4d364" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="42675253-930a-49fc-bfb3-d195e232dbde" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="4a869841-6ee3-4dea-a84d-2f807d6a1ece" name="PathToFile" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1bf6eda6-c04c-4b42-9dcd-2f2ea3f7376a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7c6a079a-42d1-40a1-afcc-7e35306aa22d" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="9bd7a018-27da-4ca6-be13-9ed221e7b42e" name="Lyrics" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="07d64901-f7e8-48e0-8dcf-900d2dee0c52" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="51aa7591-8a7c-4231-95f2-25c5a5b270d4" name="Song" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="43b9a903-3990-413f-9301-3ab9ecbd327b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="18dbd633-6db6-43a4-bd74-0b601ab1cfb0" name="name string" direction="In" isUnique="false">
+                  <elementDefinition Id="55e84ae4-c635-4816-9401-149f5458d148" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="560731f7-b373-4b88-9cf6-7df8744776d4" name="year" direction="In" isUnique="false">
+                  <elementDefinition Id="59ab3f8f-df17-4941-bedd-b808f47e330e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="42675253-930a-49fc-bfb3-d195e232dbde" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a5b1df1a-c7dd-4d4c-ab83-70b097699e14" name="artist" direction="In" isUnique="false">
+                  <elementDefinition Id="cb29f492-1eb3-4824-a3ca-95d1c5586662" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8f780e60-2c91-47b9-95ad-1d9a4f7d7904" LastKnownName="Artist" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="09bed7f8-626b-48d9-a56b-cafd6db496d7" name="pathOfFile" direction="In" isUnique="false">
+                  <elementDefinition Id="cd8928c6-8b3a-475a-9d55-843d55b45d99" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="01dccdf8-f3dc-4eaa-8404-cd56f8ff1336" name="ToSrting" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a018b155-d880-486e-ba9c-992959bb6d6c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8c2a24ae-d088-4944-81e8-8b490a0c941e" direction="Return" isUnique="false">
+                  <elementDefinition Id="dfe77d1f-2bea-4964-bf6a-f1b40ee02570" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="9687c106-fb3b-43f7-8a24-0761e235f904" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="42675253-930a-49fc-bfb3-d195e232dbde" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="3938ba4d-fd51-44ef-be82-fb2e5cbf136b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7c6a079a-42d1-40a1-afcc-7e35306aa22d" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="44a625f9-066e-4440-ae46-b598df9029bb" name="Playlist" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ad4661b6-551c-43f3-abf2-561df29e4cbf" />
+        <targetEnds>
+          <association Id="26a02e7f-31f4-4e1a-bce5-4a796ee2fb6c" isDerived="false" sourceEndRoleName="Playlist" targetEndRoleName="Song" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d7e45558-fc42-46b1-929e-d5ec315b9442" LastKnownName="Song" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16f67cd1-4dd4-4de5-9047-3467648198f1" name="Playlist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="6d004b45-bc95-4b8b-853c-c61e3cd9199d" name="Lower" value="*">
+                      <elementDefinition Id="d9a2001a-bb4c-41e4-bbe2-6b152ad9d6bf" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="5d7aa597-ba5a-44e5-a66b-c474821efb98" name="Upper" value="*">
+                      <elementDefinition Id="6edc8bf6-9e99-4396-9672-1cad0cfc0e39" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0396cff9-3e5f-427d-9c4b-09f7b2e4b730" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4a09018a-d2bd-462d-84fe-718fe6065b11" name="Song" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="efcf4fd3-c162-4fa7-a393-edc110fe79cf" name="Lower" value="*">
+                      <elementDefinition Id="63f7123f-d57c-4795-b516-6969a28bd235" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="bf5eafc5-9267-4868-9851-f5ae0b0d6f7f" name="Upper" value="*">
+                      <elementDefinition Id="348a1af1-5fee-4c77-8180-7b3464b3e4b3" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d25b4152-12f9-4bbc-8060-e06ffaf1c880" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2942708c-5050-4282-8ef9-c41d7cf575cb" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="0e27deb7-a61d-4551-a2e4-cb06d4812624" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4624a863-70fe-4dae-bf27-16467a83d136" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d6fa7956-ee9a-4955-b03e-f7898c3c4659" name="Playlist" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5484e5e5-c212-4efd-9b37-debd8a765cba" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="eb34c78e-37b4-4e33-866d-7a3ed245bcdd" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="d1b1928f-d593-49c9-bdec-e3c9eab60132" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bd36f5ab-29ff-43fc-8bbd-68299246dec3" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ac564da9-1883-4a4c-9fb6-83776d137733" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a8b7befe-cdff-48a0-84b9-244bfb7edf49" name="song" direction="In" isUnique="false">
+                  <elementDefinition Id="6d0db5dd-a855-492b-a4b4-00f88b815e7c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="83821847-7a50-46d3-9371-b1ec2cf8352a" LastKnownName="Song" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f47e92d8-0046-4951-bd9a-ce227051f7e4" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7fc21c32-9887-4e17-a778-a59932fca524" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5816fae3-0d4a-4d18-964a-39bb4ad7c0b7" name="songs" direction="In" isUnique="false">
+                  <elementDefinition Id="a321cb1d-8fa0-49b7-920d-36af19f3014e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a9be1b7-cd2e-4931-a59a-a0fcc0b84576" LastKnownName="List&lt;Song&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="aad35c67-f843-4190-aa7a-508ffa0dc560" name="Remove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="62c51109-3385-483c-b6cb-7b772ebc33b6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6fabffc7-d97f-4015-91de-a7cc245edf82" name="song" direction="In" isUnique="false">
+                  <elementDefinition Id="90af5800-f3e9-4db0-b264-942cebfa98a0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="83821847-7a50-46d3-9371-b1ec2cf8352a" LastKnownName="Song" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="34d037cd-55c3-4779-970b-ba37589778d2" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="91380592-dd4f-4a39-910e-48ed099e2c28" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3c762766-d500-456c-9c55-d32e029db637" direction="Return" isUnique="false">
+                  <elementDefinition Id="6fd6c2f5-051e-4019-8d22-cbf45cdfd2d9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="83821847-7a50-46d3-9371-b1ec2cf8352a" name="Song" isAbstract="false" isLeaf="false" cachedFullName="MusicPlayerModdel::Song">
+        <elementDefinition Id="cadcc528-fecc-422d-856a-81e9c95439e6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4a9be1b7-cd2e-4931-a59a-a0fcc0b84576" name="List&lt;Song&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Song&gt;">
+        <elementDefinition Id="7f42102c-b8e5-4a6a-a834-c5f67ffa7f90" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="94b363d0-06d7-400a-bee1-b1fd53f8db75" name="Artist" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9dec22e3-7c8d-4886-b82b-0bfc124a76eb" />
+        <ownedAttributesInternal>
+          <property Id="4f764238-306b-4d78-aa2b-08056c686507" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3172d4e0-0b12-41f7-8f16-3a3ae0989f9d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="43d94b4a-af3e-4ed4-9afc-911302bc719c" name="Birthday" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ceeebdc0-f5e9-4a39-aaf6-3fff561166c7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="efa0a9fc-e3df-4b14-9bac-74d53ccfd294" LastKnownName="Date" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c2f5ec2b-e539-4a35-b888-88f3493ef70e" name="Artist" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a2e96b7d-698c-4182-bbc8-441c4dafd845" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e672b502-8793-4d39-8ccd-156ad16304de" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="6e298117-162f-48d5-82fb-71f0a429d571" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e97309fb-9ec6-4513-9e6b-5f4af8b8913e" name="birthdat" direction="In" isUnique="false">
+                  <elementDefinition Id="967aa4a7-d53e-4bdf-970b-76e4b0625afb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="efa0a9fc-e3df-4b14-9bac-74d53ccfd294" LastKnownName="Date" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="855d9c3d-7ddf-4ba5-9dc9-0d683e4d5e0f" name="Add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="afa7ee0e-1298-43dd-a51c-25d89ff06198" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7ebdaf45-7020-44e0-bfd0-864f8f538d33" name="song" direction="In" isUnique="false">
+                  <elementDefinition Id="44a0ec75-1751-453e-9ce0-e2ced34cd759" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="83821847-7a50-46d3-9371-b1ec2cf8352a" LastKnownName="Song" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1ff03fc5-6a68-43fc-8a67-9ca685d565d2" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="666da789-8881-4695-a6e0-37d2e3ce23b7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d09a2db8-4dd6-4722-b99e-5c51819d7893" direction="Return" isUnique="false">
+                  <elementDefinition Id="3dd5443e-4910-462a-8bb0-5433ef3923c8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="efa0a9fc-e3df-4b14-9bac-74d53ccfd294" name="Date" isAbstract="false" isLeaf="false" cachedFullName="Date">
+        <elementDefinition Id="5b0e1acd-9dba-40d3-bee3-6e7f3ff8bac3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5b8f747a-d12a-4140-bda1-90099716b25d" name="Artist" isAbstract="false" isLeaf="false" cachedFullName="MusicPlayerModdel::Artist">
+        <elementDefinition Id="9dec22e3-7c8d-4886-b82b-0bfc124a76eb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ee506b3f-3939-4450-9378-954bfc856a7b" name="Playlist" isAbstract="false" isLeaf="false" cachedFullName="MusicPlayerModdel::Playlist">
+        <elementDefinition Id="ad4661b6-551c-43f3-abf2-561df29e4cbf" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="cd7b33d9-8478-4cab-91e7-50db1ed00221" name="MusicPlayerModdel">
+    <elementDefinition Id="b3a680b9-fc1b-4480-a835-4e232d1143f2" />
+  </package>
+</logicalClassDesignerModel>
