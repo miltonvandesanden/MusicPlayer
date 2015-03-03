@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-03-03T11:36:00" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-03-03T11:36:00" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2015-03-03T11:36:00" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-03-03T11:36:00" Importance="Diagnostic" Text="ProjectPath = ..\MusicPlayerModdelLib\MusicPlayerModdelLib.csproj" />
+  <Message Timestamp="2015-03-03T11:36:00" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-03-03T11:36:00" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-03-03T11:36:00" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-03-03T11:36:00" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-03-03T11:36:00" Importance="Medium" Text="MusicPlayerModdel's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'MusicPlayerModdel::MusicPlayer' -  (Class), 'MusicPlayerModdel::Song' -  (Class), 'MusicPlayerModdel::Playlist' -  (Class), 'MusicPlayerModdel::Artist' -  (Class) " />
+  <Message Timestamp="2015-03-03T11:36:06" Importance="Medium" Text="Project Added: C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\MusicPlayerModdelLib.csproj" />
+  <Message Timestamp="2015-03-03T11:36:06" Importance="Medium" Text="'MusicPlayerModdel::MusicPlayer' -  (Class) : success (file created) - C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\GeneratedCode\MusicPlayer.cs" />
+  <Message Timestamp="2015-03-03T11:36:07" Importance="Medium" Text="'MusicPlayerModdel::Song' -  (Class) : success (file created) - C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\GeneratedCode\Song.cs" />
+  <Message Timestamp="2015-03-03T11:36:07" Importance="Medium" Text="'MusicPlayerModdel::Playlist' -  (Class) : success (file created) - C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\GeneratedCode\Playlist.cs" />
+  <Message Timestamp="2015-03-03T11:36:07" Importance="Medium" Text="'MusicPlayerModdel::Artist' -  (Class) : success (file created) - C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\GeneratedCode\Artist.cs" />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="ProjectPath = ..\MusicPlayerModdelLib\MusicPlayerModdelLib.csproj" />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Medium" Text="MusicPlayerModdel's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'MusicPlayerModdel::MusicPlayer' -  (Class), 'MusicPlayerModdel::Song' -  (Class), 'MusicPlayerModdel::Playlist' -  (Class), 'MusicPlayerModdel::Artist' -  (Class) " />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel::MusicPlayer' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel::Song' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel::Playlist' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel::Artist' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="The selection included 13 elements which were not bound to a template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel' -  (ModelStoreModel): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'Artist' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'Song' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'Playlist' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'string' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'int' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'List&lt;Song&gt;' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'Date' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel::' -  (Association): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel::' -  (Association): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel::' -  (Association): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel::' -  (Association): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="Diagnostic" Text="'MusicPlayerModdel::' -  (Association): no bound template." />
+  <Message Timestamp="2015-03-03T11:36:08" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
