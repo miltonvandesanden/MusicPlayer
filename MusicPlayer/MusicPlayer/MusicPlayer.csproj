@@ -83,12 +83,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MusicPlayerModdelLib\MusicPlayerModelLib.csproj">
-      <Project>{0bffe332-fd61-4969-850f-c0325e11ee2f}</Project>
-      <Name>MusicPlayerModelLib</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
