@@ -193,6 +193,173 @@
             <elementDefinition Id="292b5300-7818-431b-8b9f-dc0bb671273e" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a1910e02-e8b5-4007-a823-6b2a7ff9e9e9" name="songs" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9942186f-b8dc-47c0-9015-6dc1114c6a7a" name="property" profile="CSharpProfile">
+                <elementDefinition Id="18e12b95-a627-4b2a-8e50-dcfa38eb71e3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7298e219-bfd4-4a8c-91fe-63c3594348a7">
+                    <propertyInstance Id="f2b22d20-2095-4f6e-8ef9-cbe8b4e28b87" name="ClrAttributes">
+                      <elementDefinition Id="d013da04-13e0-4a7a-ae79-d4f42c0c3fab" />
+                    </propertyInstance>
+                    <elementDefinition Id="cb95ed6e-e773-4952-9c4e-19ee1810cde6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="214f9c24-215d-4d33-bd4c-6f954fc49e2e">
+                    <propertyInstance Id="c9491558-985e-4f02-bdc6-c6adab3311e3" name="Get" value="none">
+                      <elementDefinition Id="3e4e1fab-896a-4844-93be-59026aa43704" />
+                    </propertyInstance>
+                    <elementDefinition Id="ad3ef973-2684-4d7b-aa77-789193b10c5d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f460ec9d-46ff-4a9f-954d-9891e3505839">
+                    <propertyInstance Id="d554a6c1-7694-4a1f-8c67-f1375dd6edb5" name="HasBody" value="false">
+                      <elementDefinition Id="51715b65-d4e8-41bc-bea5-8d12d3f6ee9e" />
+                    </propertyInstance>
+                    <elementDefinition Id="81a471f2-c755-405c-811a-9415d321e9a3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="741dd5e5-9797-4d42-a50d-dca7c4479d79">
+                    <propertyInstance Id="056f78ba-7ac0-42d3-b3ba-ec63cf12a0c3" name="IsUnsafe" value="false">
+                      <elementDefinition Id="13294577-62c3-41fa-ae71-6b0b1b8cbe60" />
+                    </propertyInstance>
+                    <elementDefinition Id="a058fc4d-1a93-44f4-aa11-e5705b40b9ba" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9c99b2bf-5db4-4b19-9a61-396429f8f170">
+                    <propertyInstance Id="99889b77-be70-4fad-8705-8edfdabc5c10" name="Inheritance" value="none">
+                      <elementDefinition Id="acdc4f5a-fcfb-4134-b8f5-ce8fb65a4e76" />
+                    </propertyInstance>
+                    <elementDefinition Id="90b94e1f-227c-4ec9-bfef-0ae96ffbb4e6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0230ba11-a679-45b8-b8b3-7446f9a273be">
+                    <propertyInstance Id="c83e75fe-6c49-4bdc-9dc4-d5cce942f520" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f19a9525-cdd5-4cc8-b368-111e861f67b3" />
+                    </propertyInstance>
+                    <elementDefinition Id="d6d0d9de-bab2-4037-a1d8-839aee0eb201" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="05ddefa1-b9e2-4e1c-a58e-b55bf2f05500">
+                    <propertyInstance Id="c46645ef-fa46-4b50-8c89-2ac81174935f" name="Set" value="none">
+                      <elementDefinition Id="e2a02911-a696-4ea9-95c6-76f3dd4c25c8" />
+                    </propertyInstance>
+                    <elementDefinition Id="6b4471f9-9a84-4007-a845-15790fdb8379" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c429e532-8a03-4684-85c4-0a847e042b61" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a9be1b7-cd2e-4931-a59a-a0fcc0b84576" LastKnownName="List&lt;Song&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="87923f63-3af4-4318-9898-fb00330f6684" name="artists" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="3a57f57a-9bc0-46f7-b699-f3ae39534251" name="property" profile="CSharpProfile">
+                <elementDefinition Id="2b9373ef-5a11-436d-8978-783968506b4f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c3118259-0015-4118-a4ee-72500e628003">
+                    <propertyInstance Id="fdfc4291-8817-4907-86d8-4f84af3a2f8f" name="ClrAttributes">
+                      <elementDefinition Id="2f30ae31-ff01-435e-8d2b-aed65a7d053b" />
+                    </propertyInstance>
+                    <elementDefinition Id="7ab72cb7-58fb-4baa-ab69-1e22f9d5a155" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1b64af61-6e73-429b-8313-22772c918e7f">
+                    <propertyInstance Id="e8bfa78a-9bb2-41d9-82b2-08286ad7e2ab" name="Get" value="none">
+                      <elementDefinition Id="c1532dc6-7ac9-47b6-a0a3-433a324815bf" />
+                    </propertyInstance>
+                    <elementDefinition Id="59fbde32-37ed-4dad-a6f4-7e8043e8a4ae" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0c2f51da-ea8f-403b-9ba9-ca3dce4849db">
+                    <propertyInstance Id="5f760c02-af44-48e6-9259-4b898a6df50b" name="HasBody" value="false">
+                      <elementDefinition Id="81327d3b-df6a-48ae-8483-0eb6543551c1" />
+                    </propertyInstance>
+                    <elementDefinition Id="3a82b7b0-a26a-4c1a-9597-ab09e45ad996" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9b6163f7-c74a-4575-ba75-e80fed8e0dc9">
+                    <propertyInstance Id="64a6d8e3-039b-4e83-9adb-956bf65ebd17" name="IsUnsafe" value="false">
+                      <elementDefinition Id="9d67bcd3-9252-4f39-9d0f-4c3022ab81b8" />
+                    </propertyInstance>
+                    <elementDefinition Id="534fca60-6a48-4cde-8544-ce6227654bea" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="64fba15c-efd1-41be-9509-9d66f1d00c46">
+                    <propertyInstance Id="97db024f-f98d-40e9-950a-f45deac20c97" name="Inheritance" value="none">
+                      <elementDefinition Id="76a4c323-ee00-4b8a-9628-6541f5977707" />
+                    </propertyInstance>
+                    <elementDefinition Id="9534a5ee-183e-4a76-9f81-d441ff7013f4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e8fb4e0c-e43d-445b-b1ff-bd202776fb92">
+                    <propertyInstance Id="bf68e613-2613-43bb-8478-fe95feee618e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="1ca9275b-85eb-4843-9245-5552dad46440" />
+                    </propertyInstance>
+                    <elementDefinition Id="7710b4cb-c2c7-4181-ad65-4e8572f2f7cb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="80f2ff50-f772-4025-94e3-7d19438f543f">
+                    <propertyInstance Id="fd65f0d4-4316-47d4-8361-d6b71662179a" name="Set" value="none">
+                      <elementDefinition Id="a14b3162-357a-47e7-9c10-682424d07728" />
+                    </propertyInstance>
+                    <elementDefinition Id="5cbb3d96-dd43-4486-a2c6-1707ad489448" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="bc3a992f-0f49-4249-83b5-b6032c54f607" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f1913dd8-92db-47a6-9e0f-cd1bec96469d" LastKnownName="List&lt;Artist&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="d13268cc-f930-496d-9914-df34474deb69" name="playlists" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9edd2961-b83b-4700-919c-9fb432568497" name="property" profile="CSharpProfile">
+                <elementDefinition Id="5ce813aa-ea85-4f43-a70f-a95e3e029949" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="71f78ef0-164e-421a-84fd-708927d58d28">
+                    <propertyInstance Id="1e4cf832-20ce-4bc5-abe4-16fe1b91e22f" name="ClrAttributes">
+                      <elementDefinition Id="07276eff-09cd-43fb-beb2-b1fa4998bf38" />
+                    </propertyInstance>
+                    <elementDefinition Id="f6eec170-1ba8-4685-885d-6b15b919a453" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="be7ec2ff-17d5-425c-a050-3acbc0040be5">
+                    <propertyInstance Id="386a5a3e-ddf1-463e-9868-d6202b1c76e2" name="Get" value="none">
+                      <elementDefinition Id="1ad438c2-254f-40d3-8173-d95e4eec537f" />
+                    </propertyInstance>
+                    <elementDefinition Id="ab41a390-fae4-408d-83a3-3d357c421058" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7eeb6cfc-9fe9-46de-88b5-cb85688efa65">
+                    <propertyInstance Id="6329bc32-9f65-4c3b-97b7-b6bc474140c5" name="HasBody" value="false">
+                      <elementDefinition Id="6490d469-a33f-42a0-9f6d-7a01e5d50603" />
+                    </propertyInstance>
+                    <elementDefinition Id="cc9595b9-c984-45ab-b152-b80499b29814" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7c9d08b0-d59c-4711-8efc-0f44394925d0">
+                    <propertyInstance Id="39de8152-b087-4709-b547-09499eb0c8d3" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d45751a6-6afb-467e-ab7f-e855562c9c79" />
+                    </propertyInstance>
+                    <elementDefinition Id="14b340c5-a2a3-46ec-85fa-7c25c4f76d22" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b630bd49-6adb-4929-a832-d6a78e19c0e2">
+                    <propertyInstance Id="a1fdcea0-2c1f-4c1d-8fde-ec23347ba293" name="Inheritance" value="none">
+                      <elementDefinition Id="13d6856b-4804-40ef-9cd6-fbe5c9c11694" />
+                    </propertyInstance>
+                    <elementDefinition Id="9f16f8e5-f901-4746-8c01-38a775e0c4e7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a1ec93f2-0d31-4bb3-8614-81ceea380323">
+                    <propertyInstance Id="abf3c054-e8b2-4e41-8d6c-269c4511aee8" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="fdacfbeb-5409-40d2-9ebe-89d147651560" />
+                    </propertyInstance>
+                    <elementDefinition Id="3e04374d-4a1d-4e80-b4a1-bc95f3f8bbfd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7b90276a-d597-4b71-b0eb-c1466572e355">
+                    <propertyInstance Id="0a8f3e78-e42f-4418-8afd-fa991e65269b" name="Set" value="none">
+                      <elementDefinition Id="e30974de-fcc9-4543-a916-978dca845561" />
+                    </propertyInstance>
+                    <elementDefinition Id="d29b0335-49b4-468f-a274-39dfa14f57c0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f43bf5d8-372a-4dad-971a-ceb563e9f3b4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b7410c76-bb1e-48ee-a5e7-e96c411d961f" LastKnownName="List&lt;Playlist&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="91d0dd48-c086-446f-98bf-5fa456d7f7e2" name="MusicPlayer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <appliedStereotypesInternal>
@@ -511,10 +678,10 @@
             <elementDefinition Id="d7fbf31c-2835-444c-9d37-a5fb530f3667" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="3e869ac0-2d43-4141-b4a7-54573163ba4d" name="platlist" direction="In" isUnique="false">
-                  <elementDefinition Id="f8da0e60-1640-4087-adfb-8b78ba8c082d" />
+                <parameter Id="faba3a78-45fd-4a1c-9ef3-78a238c2f4c5" name="playlist" direction="In" isUnique="false">
+                  <elementDefinition Id="e7970416-2215-4543-b550-8e77b1e213c4" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="94a772cf-d137-444d-ab48-a7351e10b945" LastKnownName="Playlist" />
+                    <referencedTypeMoniker Id="ee506b3f-3939-4450-9378-954bfc856a7b" LastKnownName="Playlist" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -633,11 +800,6 @@
     <packageHasNamedElement>
       <referencedType Id="30c44554-a29e-4bdf-87e0-6aee51397f3d" name="Song" isAbstract="false" isLeaf="false" cachedFullName="Song">
         <elementDefinition Id="ab95bcd0-1bc0-4cad-905b-50cd78f57f94" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="94a772cf-d137-444d-ab48-a7351e10b945" name="Playlist" isAbstract="false" isLeaf="false" cachedFullName="Playlist">
-        <elementDefinition Id="1226144d-32ca-4dad-856d-8cd8ee6183ca" />
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
@@ -929,6 +1091,61 @@
               <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
             </type_NamedElement>
           </property>
+          <property Id="2107a247-c0ce-4b72-9a3c-d61dbccf396e" name="artist" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8abb9180-b635-43fc-9574-a60e7a8fd4f8" name="property" profile="CSharpProfile">
+                <elementDefinition Id="c714af18-16bf-48e2-803e-ee1dd4923a68" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2ddf8878-8a04-41cd-a344-e4f9a84d6fbc">
+                    <propertyInstance Id="8e65026d-74de-46a2-b18d-a08b070a2eae" name="ClrAttributes">
+                      <elementDefinition Id="22b1df92-0654-43b7-b29c-6a9efeee2a2c" />
+                    </propertyInstance>
+                    <elementDefinition Id="900fa05f-9888-4b60-81e5-05e477e10102" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f67429e6-782f-4e70-8cdf-c05af2de381d">
+                    <propertyInstance Id="401e3dba-1d2c-4137-b5e1-7c43dab6864a" name="Get" value="none">
+                      <elementDefinition Id="9849e543-a40f-4c4f-8f7a-fa540b009bcc" />
+                    </propertyInstance>
+                    <elementDefinition Id="caf07fa5-cd1a-47bd-ba06-8325671226db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="73e60692-d099-4222-938e-788a6d7610c7">
+                    <propertyInstance Id="ae9723ad-4f7e-48e6-9cdc-bef268a6fafe" name="HasBody" value="false">
+                      <elementDefinition Id="427b0116-099e-42fd-888a-bff151c5a4a3" />
+                    </propertyInstance>
+                    <elementDefinition Id="6a0928e1-82d4-4b7b-8776-df6d479dc5be" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="51908b13-a36d-48a5-86a9-d0178a25463b">
+                    <propertyInstance Id="64040a7d-7d17-44ad-833e-56ccb1f19e4c" name="IsUnsafe" value="false">
+                      <elementDefinition Id="2fd42262-2bd1-4218-97c1-63c5c2fd5885" />
+                    </propertyInstance>
+                    <elementDefinition Id="cb29de4a-1342-49ec-b507-5a85ed216c8d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7365b964-4883-493f-8a8c-f9b813ba4cd5">
+                    <propertyInstance Id="7da10cea-27c6-46df-be55-8abe98871394" name="Inheritance" value="none">
+                      <elementDefinition Id="18750588-d5a5-47a7-aa55-528f94144d5b" />
+                    </propertyInstance>
+                    <elementDefinition Id="37aae5f6-62a5-4445-a371-2b3dc5252af2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="adad87ca-c91e-48a0-ad47-7c2cc5b48c87">
+                    <propertyInstance Id="b57e9556-cee7-49b4-9b76-07da03be5fbc" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="2be54f88-87a0-4360-91d9-0d0c5a6ae60a" />
+                    </propertyInstance>
+                    <elementDefinition Id="04bb81aa-3d36-4f3e-b3b4-4486268bb2ff" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0010a834-128c-48cc-b890-cdfcc23e9329">
+                    <propertyInstance Id="b38e26cb-6f12-47f3-aacd-dbf2a76a3d06" name="Set" value="none">
+                      <elementDefinition Id="d70535fa-4f15-454e-837a-20d5343230eb" />
+                    </propertyInstance>
+                    <elementDefinition Id="812a71ca-3837-4678-87d8-d68026f91e5c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="885da775-b486-4cda-8deb-20d7699f7e71" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5b8f747a-d12a-4140-bda1-90099716b25d" LastKnownName="Artist" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="51aa7591-8a7c-4231-95f2-25c5a5b270d4" name="Song" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1214,6 +1431,12 @@
             <elementDefinition Id="4624a863-70fe-4dae-bf27-16467a83d136" />
             <type_NamedElement>
               <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="7d7bce4e-b51a-41f2-9ecb-4caf9332f156" name="songs" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c8fd6810-8450-4c9a-b62d-b6a97d14a0fe" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4a9be1b7-cd2e-4931-a59a-a0fcc0b84576" LastKnownName="List&lt;Song&gt;" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1662,6 +1885,12 @@
               <referencedTypeMoniker Id="efa0a9fc-e3df-4b14-9bac-74d53ccfd294" LastKnownName="Date" />
             </type_NamedElement>
           </property>
+          <property Id="db00a6d9-ba34-42ef-b26e-f07bc229b3d1" name="songs" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b006eb75-f756-4ef2-b751-99d1cb3d3e69" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="36a7b636-ffb5-48db-b63f-27ad94057a5f" LastKnownName="List&lt;Songs&gt;" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="c2f5ec2b-e539-4a35-b888-88f3493ef70e" name="Artist" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1856,6 +2085,21 @@
     <packageHasNamedElement>
       <referencedType Id="ee506b3f-3939-4450-9378-954bfc856a7b" name="Playlist" isAbstract="false" isLeaf="false" cachedFullName="MusicPlayerModdel::Playlist">
         <elementDefinition Id="ad4661b6-551c-43f3-abf2-561df29e4cbf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="36a7b636-ffb5-48db-b63f-27ad94057a5f" name="List&lt;Songs&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Songs&gt;">
+        <elementDefinition Id="3ff88b6b-c619-4124-afc3-630263127b69" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f1913dd8-92db-47a6-9e0f-cd1bec96469d" name="List&lt;Artist&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Artist&gt;">
+        <elementDefinition Id="a75ea357-a7e7-4a00-8ae5-4f3862004d2b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b7410c76-bb1e-48ee-a5e7-e96c411d961f" name="List&lt;Playlist&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Playlist&gt;">
+        <elementDefinition Id="05294135-8cea-4e98-befe-b0c6ad112175" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
