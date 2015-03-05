@@ -7,43 +7,45 @@ namespace MusicPlayer
 {
     public class Artist
     {
-        private int songs;
+        //fields
+        private List<Song> songs;
 
-        public Artist(string name, Date birthday)
+        //properties
+        public string Name
         {
-            throw new System.NotImplementedException();
+            get;
+            set;
         }
 
-        public int Birthday
+        public DateTime Birthday
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        public int Name
+        //constructors
+        public Artist(string name, DateTime birthday)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            Name = name;
+            Birthday = birthday;
         }
 
+        //methods
         public void Add(Song song)
         {
-            throw new System.NotImplementedException();
+            songs.Add(song);
         }
 
-        public void ToString()
+        public override string ToString()
         {
-            throw new System.NotImplementedException();
+            string artistString = Name + " : " + Birthday;
+
+            foreach (Song song in songs)
+            {
+                artistString += " : " + song.Name;
+            }
+
+            return artistString;
         }
     }
 }

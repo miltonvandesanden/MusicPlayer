@@ -10,3 +10,5 @@ C:\Users\milton\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\M
 C:\Users\milton\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.GenerateResource.Cache
 C:\Users\milton\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.exe
 C:\Users\milton\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.pdb
+C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.exe
+C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.pdb

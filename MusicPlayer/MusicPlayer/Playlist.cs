@@ -7,51 +7,38 @@ namespace MusicPlayer
 {
     public class Playlist
     {
-        private int songs;
-    
-        public Playlist()
+        public virtual string Name
+        {
+            get;
+            set;
+        }
+
+        public virtual IEnumerable<Song> Song
+        {
+            get;
+            set;
+        }
+
+        public Playlist(string name)
+        {
+        }
+
+        public virtual void Add(Song song)
         {
             throw new System.NotImplementedException();
         }
 
-        public int Name
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public Song Song
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public void Add(Song song)
+        public virtual void Add(List<Song> songs)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Add(List<Song> songs)
+        public virtual void Remove(Song song)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Remove(Song song)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void ToString()
+        public virtual string ToString()
         {
             throw new System.NotImplementedException();
         }

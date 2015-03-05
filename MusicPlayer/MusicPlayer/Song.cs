@@ -7,71 +7,32 @@ namespace MusicPlayer
 {
     public class Song
     {
-        private int artist;
-    
-        public Song()
+        //fields
+        private Artist artist;
+
+        //properties
+        public string Name { get; set; }
+
+        public int Year { get; set; }
+
+        public string PathToFile { get; set; }
+
+        public string Lyrics { get; set; }
+
+        //constructors
+        public Song(string name, int year, Artist artist, string pathOfFile, string lyrics)
         {
-            throw new System.NotImplementedException();
+            Name = name;
+            Year = year;
+            this.artist = artist;
+            PathToFile = pathOfFile;
+            Lyrics = lyrics;
         }
 
-        public int Lyrics
+        //methods
+        public override string ToString()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public int Name
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public int PathToFile
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public int Year
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public Artist Artist
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-    
-        public void ToString()
-        {
-            throw new System.NotImplementedException();
+            return Name + " : " + Year + " : " + artist + " : " + PathToFile + " : " + Lyrics;
         }
     }
 }

@@ -15,12 +15,9 @@
   <Class Name="MusicPlayer.Song">
     <Position X="6" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAACAAABAAAAAAEAAAAgAQAAIAAAAAAIAAAAAAAAAA=</HashCode>
+      <HashCode>AAAACAAABAAAAAAEAAAAgAQAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>Song.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Artist" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="MusicPlayer.Artist">
     <Position X="6" Y="5.25" Width="1.5" />
@@ -31,23 +28,10 @@
   </Class>
   <Class Name="MusicPlayer.Playlist">
     <Position X="2.5" Y="5.25" Width="1.5" />
-    <AssociationLine Name="Song" Type="MusicPlayer.Song" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="4" Y="5.896" />
-        <Point X="4.168" Y="5.896" />
-        <Point X="4.168" Y="8.531" />
-        <Point X="8.667" Y="8.531" />
-        <Point X="8.667" Y="2.812" />
-        <Point X="7.5" Y="2.812" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAQEAAAABAwAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAAAAAAAEAAAABAwAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Playlist.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Song" />
-    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
