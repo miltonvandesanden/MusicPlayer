@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{25620d79-8519-453b-8af7-b4fe0c9dd011}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
-    <Name>MusicPlayerModdel</Name>
+    <Name>MusicPlayerModel</Name>
     <RootNamespace>MusicPlayerModdel</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
