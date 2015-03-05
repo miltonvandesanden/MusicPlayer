@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 
 
 namespace MusicPlayer
 {
@@ -15,6 +16,8 @@ namespace MusicPlayer
         public Form1()
         {
             InitializeComponent();
+            MusicPlayer Player = new MusicPlayer();
+
         }
 
         private void label2_Click(object sender, EventArgs e)
