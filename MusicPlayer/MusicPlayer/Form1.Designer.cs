@@ -132,6 +132,7 @@
             // 
             // tbSName
             // 
+            this.tbSName.Enabled = false;
             this.tbSName.Location = new System.Drawing.Point(68, 29);
             this.tbSName.Name = "tbSName";
             this.tbSName.Size = new System.Drawing.Size(168, 20);
@@ -287,6 +288,7 @@
             // 
             // nudSYear
             // 
+            this.nudSYear.Enabled = false;
             this.nudSYear.Location = new System.Drawing.Point(68, 86);
             this.nudSYear.Maximum = new decimal(new int[] {
             2015,
@@ -306,6 +308,7 @@
             0,
             0,
             0});
+            this.nudSYear.ValueChanged += new System.EventHandler(this.nudSYear_ValueChanged);
             // 
             // gbAddArtist
             // 
@@ -363,6 +366,7 @@
             // 
             // tbPName
             // 
+            this.tbPName.Enabled = false;
             this.tbPName.Location = new System.Drawing.Point(66, 30);
             this.tbPName.Name = "tbPName";
             this.tbPName.Size = new System.Drawing.Size(168, 20);

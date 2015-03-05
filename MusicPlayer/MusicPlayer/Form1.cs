@@ -15,7 +15,8 @@ namespace MusicPlayer
         private MusicPlayer player;
         private List<Song> songs;
         private List<Playlist> playlists;
-        private List<Artist> artists; 
+        private List<Artist> artists;
+        private bool playlistCheck;
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace MusicPlayer
             songs = player.Songs;
             playlists = player.Playlists;
             artists = player.Artists;
+            playlistCheck = false;
 
         }
 
@@ -54,11 +56,18 @@ namespace MusicPlayer
             cbSArtist.Text = "";
             rtbLyrics.Text = "";
             tbSPath.Text = "";
+            nudSYear.Value = 1890;
 
             btnAddSong.Enabled = false;
             cbSArtist.Enabled = false;
             rtbLyrics.Enabled = false;
             tbSPath.Enabled = false;
+            nudSYear.Enabled = false;
+
+            if (songs.Count > 0)
+            {
+                tbPName.Enabled = true;
+            }
         }
 
         //Add Artist
@@ -69,6 +78,11 @@ namespace MusicPlayer
 
             tbAName.Text = "";
             btnAddArtist.Enabled = false;
+
+            if (artists.Count > 0)
+            {
+                tbSName.Enabled = true;
+            }
         }
 
         //Create Playlist
@@ -223,6 +237,7 @@ namespace MusicPlayer
                     {
                         string songName = Convert.ToString(cbRSFPSong.SelectedItem);
                         songName = songName.Substring(0, songName.IndexOf(" :"));
+
                         if (song.Name == songName)
                         {
                             playlist.Remove(song);
@@ -260,7 +275,7 @@ namespace MusicPlayer
         {
             if (cbSArtist.SelectedIndex != -1)
             {
-                rtbLyrics.Enabled = true;
+                nudSYear.Enabled = true;
             }
         }
 
@@ -307,6 +322,23 @@ namespace MusicPlayer
         {
             if (libPlaylist.SelectedIndex != -1)
             {
+                foreach (Playlist playlist in playlists)
+                {
+                    string playlistName = Convert.ToString(libPlaylist.SelectedItem);
+                    playlistName = playlistName.Substring(0, playlistName.IndexOf(" :"));
+
+                    if (playlist.Name == playlistName)
+                    {
+                        playlistCheck = true;                        
+                    }
+                }
+            }
+
+            if (playlistCheck)
+            {
+                cbASPPlaylistName.Enabled = false;
+            } else
+            {
                 cbASPPlaylistName.Enabled = true;
             }
         }
@@ -320,6 +352,11 @@ namespace MusicPlayer
                 cbPRemove.Items.Add(playlist.Name);
             }
             btnPRemove.Enabled = true;
+        }
+
+        private void nudSYear_ValueChanged(object sender, EventArgs e)
+        {
+            rtbLyrics.Enabled = true;
         }
     }
 }
