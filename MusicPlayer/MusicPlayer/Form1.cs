@@ -324,18 +324,35 @@ namespace MusicPlayer
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            string songName = Convert.ToString(libPlaylist.SelectedItem);
-            songName = songName.Substring(0, songName.IndexOf(" :"));
             
-            foreach (Song item in songs)
+            if (playlistCheck)
             {
-                if (item.Name == songName)
+                string playlistName = Convert.ToString(libPlaylist.SelectedItem);
+                foreach (Playlist item in playlists)
                 {
-                    tbCurrentSong.Text = songName;
-                    Status.Text = "Playing";
-                    player.Play(item);
+                    if (item.Name == playlistName)
+                    {
+                        tbCurrentSong.Text = playlistName;
+                        Status.Text = "Playing Playlist: " + playlistName;
+                        player.Play(item);
+                    }
                 }
             }
+            else
+            {
+                string songName = Convert.ToString(libPlaylist.SelectedItem);
+                songName = songName.Substring(0, songName.IndexOf(" :"));
+                foreach (Song item in songs)
+                {
+                    if (item.Name == songName)
+                    {
+                        tbCurrentSong.Text = songName;
+                        Status.Text = "Playing";
+                        player.Play(item);
+                    }
+                }
+            }
+            
         }
 
         private void btnStop_Click(object sender, EventArgs e)
