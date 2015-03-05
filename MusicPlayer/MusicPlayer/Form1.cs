@@ -15,7 +15,7 @@ namespace MusicPlayer
         private MusicPlayer player;
         private List<Song> songs;
         private List<Playlist> playlists;
-        private List<Artist> artists; 
+        private List<Artist> artists;
         public Form1()
         {
             InitializeComponent();
@@ -320,6 +320,35 @@ namespace MusicPlayer
                 cbPRemove.Items.Add(playlist.Name);
             }
             btnPRemove.Enabled = true;
+        }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            string songName = Convert.ToString(libPlaylist.SelectedItem);
+            songName = songName.Substring(0, songName.IndexOf(" :"));
+            
+            foreach (Song item in songs)
+            {
+                if (item.Name == songName)
+                {
+                    tbCurrentSong.Text = songName;
+                    Status.Text = "Playing";
+                    player.Play(item);
+                }
+            }
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            player.StopPlaying();
+            tbCurrentSong.Text = "";
+            Status.Text = "";
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            Status.Text = "Paused";
+            //todo create real pause function here
         }
     }
 }

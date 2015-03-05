@@ -35,7 +35,7 @@ namespace MusicPlayer
             //todo
         }
 
-        public void Play(Playlist platlist)
+        public void Play(Playlist playlist)
         {
             //todo
         }
