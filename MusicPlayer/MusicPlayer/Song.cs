@@ -63,7 +63,7 @@ namespace MusicPlayer
         /// <returns></returns>
         public override string ToString()
         {
-            return Name + " : " + Year + " : " + artist + " : " + PathToFile + " : " + Lyrics;
+            return "1 : " + Name + " # " + Year + " : " + artist + " : " + PathToFile + " : " + Lyrics;
         }
     }
 }

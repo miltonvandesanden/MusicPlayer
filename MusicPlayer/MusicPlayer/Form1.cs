@@ -12,11 +12,16 @@ namespace MusicPlayer
 {
     public partial class Form1 : Form
     {
+        //fields
         private MusicPlayer player;
         private List<Song> songs;
         private List<Playlist> playlists;
         private List<Artist> artists;
         private bool playlistCheck;
+
+        /// <summary>
+        /// constructors
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -34,7 +39,13 @@ namespace MusicPlayer
 
         }
 
-        //Add Song to List
+        //events
+
+        /// <summary>
+        /// The btnAddSong_Click event adds a new instance of the Song class to the Player object and to the Artist object
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAddSong_Click(object sender, EventArgs e)
         {
             Artist sArtist;
@@ -70,7 +81,11 @@ namespace MusicPlayer
             }
         }
 
-        //Add Artist
+        /// <summary>
+        /// The btnAddArtist_Click event adds a new instance of the Artist class to the Player object
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAddArtist_Click(object sender, EventArgs e)
         {
             player.Add(new Artist(tbAName.Text, Convert.ToDateTime(dtpDateArtist.Value)));
@@ -85,7 +100,11 @@ namespace MusicPlayer
             }
         }
 
-        //Create Playlist
+        /// <summary>
+        /// the btnPCreate_Click event adds a new instance of the Playlist class to the player object
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnPCreate_Click(object sender, EventArgs e)
         {
             player.Add(new Playlist(tbPName.Text));
@@ -93,7 +112,12 @@ namespace MusicPlayer
             RefreshSongList(songs, playlists);
         }
 
-        //Add Song to Playlist
+        /// <summary>
+        /// The btnPAddSong_Click event adds a single new instance of the Song class to the playlist object if there is only one song given.
+        /// If there is more than one song given this event will add all the songs to the playlist object
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnPAddSong_Click(object sender, EventArgs e)
         {
             string playlistName = Convert.ToString(cbASPPlaylistName.Text);
@@ -101,7 +125,7 @@ namespace MusicPlayer
             if (libPlaylist.SelectedItems.Count == 1)
             {
                 string songName = Convert.ToString(libPlaylist.SelectedItem);
-                songName = songName.Substring(0, songName.IndexOf(" :"));
+                songName = songName.Substring(4, songName.IndexOf("#") - (songName.IndexOf(":") + 3));
 
                 foreach (Playlist playlist in playlists)
                 {
@@ -166,12 +190,12 @@ namespace MusicPlayer
 
             foreach (Playlist playlist in playlists)
             {
-                libPlaylist.Items.Add(playlist.Name);
+                libPlaylist.Items.Add(playlist.ToString());
             }
 
             foreach (Song song in songs)
             {
-                libPlaylist.Items.Add(song);
+                libPlaylist.Items.Add(song.ToString());
             }
         }
 
@@ -236,7 +260,7 @@ namespace MusicPlayer
                     foreach (Song song in songs)
                     {
                         string songName = Convert.ToString(cbRSFPSong.SelectedItem);
-                        songName = songName.Substring(0, songName.IndexOf(" :"));
+                        songName = songName.Substring(4, songName.IndexOf("#") - (songName.IndexOf(":") + 3));
 
                         if (song.Name == songName)
                         {
@@ -322,24 +346,16 @@ namespace MusicPlayer
         {
             if (libPlaylist.SelectedIndex != -1)
             {
-                foreach (Playlist playlist in playlists)
+                string songTag = Convert.ToString(libPlaylist.SelectedItem);
+                songTag = songTag.Substring(0, 1);
+
+                if (songTag == "1")
                 {
-                    string playlistName = Convert.ToString(libPlaylist.SelectedItem);
-                    playlistName = playlistName.Substring(0, playlistName.IndexOf(" :"));
-
-                    if (playlist.Name == playlistName)
-                    {
-                        playlistCheck = true;                        
-                    }
+                    cbASPPlaylistName.Enabled = true;
+                } else if (songTag == "0")
+                {
+                    cbASPPlaylistName.Enabled = false;
                 }
-            }
-
-            if (playlistCheck)
-            {
-                cbASPPlaylistName.Enabled = false;
-            } else
-            {
-                cbASPPlaylistName.Enabled = true;
             }
         }
 

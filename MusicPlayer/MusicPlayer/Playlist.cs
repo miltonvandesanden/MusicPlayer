@@ -83,7 +83,7 @@ namespace MusicPlayer
         /// <returns></returns>
         public override string ToString()
         {
-            string playlistString = Name;
+            string playlistString = "0 : " + Name;
 
             foreach (Song song in Songs)
             {
