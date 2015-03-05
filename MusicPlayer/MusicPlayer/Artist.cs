@@ -26,6 +26,8 @@ namespace MusicPlayer
         //constructors
         public Artist(string name, DateTime birthday)
         {
+            songs = new List<Song>();
+
             Name = name;
             Birthday = birthday;
         }

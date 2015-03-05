@@ -4,14 +4,16 @@ namespace MusicPlayer
 {
     public class MusicPlayer
     {
-
-        public MusicPlayer()
-        {
-        }
-
         public List<Song> Songs { get; set; }
         public List<Playlist> Playlists { get; set; }
         public List<Artist> Artists { get; set; }
+
+        public MusicPlayer()
+        {
+            Songs = new List<Song>();
+            Playlists = new List<Playlist>();
+            Artists = new List<Artist>();
+        }
 
         public void Add(Artist artist)
         {

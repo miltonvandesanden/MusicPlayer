@@ -68,12 +68,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnPRemove = new System.Windows.Forms.Button();
+            this.gbRemoveSongFromPlaylist = new System.Windows.Forms.GroupBox();
+            this.btnRSFPRemove = new System.Windows.Forms.Button();
+            this.cbRSFPSong = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cbRSFPPlaylist = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.gbAddSong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSYear)).BeginInit();
             this.gbAddArtist.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.gbRemoveSongFromPlaylist.SuspendLayout();
             this.SuspendLayout();
             // 
             // libPlaylist
@@ -83,6 +90,7 @@
             this.libPlaylist.Name = "libPlaylist";
             this.libPlaylist.Size = new System.Drawing.Size(532, 524);
             this.libPlaylist.TabIndex = 0;
+            this.libPlaylist.SelectedIndexChanged += new System.EventHandler(this.libPlaylist_SelectedIndexChanged);
             // 
             // btnPlay
             // 
@@ -113,6 +121,7 @@
             // 
             // btnAddSong
             // 
+            this.btnAddSong.Enabled = false;
             this.btnAddSong.Location = new System.Drawing.Point(161, 260);
             this.btnAddSong.Name = "btnAddSong";
             this.btnAddSong.Size = new System.Drawing.Size(75, 23);
@@ -127,21 +136,26 @@
             this.tbSName.Name = "tbSName";
             this.tbSName.Size = new System.Drawing.Size(168, 20);
             this.tbSName.TabIndex = 5;
+            this.tbSName.TextChanged += new System.EventHandler(this.tbSName_TextChanged);
             // 
             // tbSPath
             // 
+            this.tbSPath.Enabled = false;
             this.tbSPath.Location = new System.Drawing.Point(68, 234);
             this.tbSPath.Name = "tbSPath";
             this.tbSPath.Size = new System.Drawing.Size(168, 20);
             this.tbSPath.TabIndex = 8;
+            this.tbSPath.TextChanged += new System.EventHandler(this.tbSPath_TextChanged);
             // 
             // rtbLyrics
             // 
+            this.rtbLyrics.Enabled = false;
             this.rtbLyrics.Location = new System.Drawing.Point(68, 121);
             this.rtbLyrics.Name = "rtbLyrics";
             this.rtbLyrics.Size = new System.Drawing.Size(168, 96);
             this.rtbLyrics.TabIndex = 9;
             this.rtbLyrics.Text = "";
+            this.rtbLyrics.TextChanged += new System.EventHandler(this.rtbLyrics_TextChanged);
             // 
             // lbSName
             // 
@@ -198,11 +212,14 @@
             // 
             // cbSArtist
             // 
+            this.cbSArtist.Enabled = false;
             this.cbSArtist.FormattingEnabled = true;
             this.cbSArtist.Location = new System.Drawing.Point(68, 59);
             this.cbSArtist.Name = "cbSArtist";
             this.cbSArtist.Size = new System.Drawing.Size(168, 21);
             this.cbSArtist.TabIndex = 18;
+            this.cbSArtist.DropDown += new System.EventHandler(this.cbSArtist_DropDown);
+            this.cbSArtist.SelectedIndexChanged += new System.EventHandler(this.cbSArtist_SelectedIndexChanged);
             // 
             // lbABirthday
             // 
@@ -232,14 +249,14 @@
             // 
             // tbAName
             // 
-            this.tbAName.Location = new System.Drawing.Point(68, 27);
+            this.tbAName.Location = new System.Drawing.Point(58, 27);
             this.tbAName.Name = "tbAName";
-            this.tbAName.Size = new System.Drawing.Size(184, 20);
+            this.tbAName.Size = new System.Drawing.Size(188, 20);
             this.tbAName.TabIndex = 20;
             // 
             // btnAddArtist
             // 
-            this.btnAddArtist.Location = new System.Drawing.Point(161, 83);
+            this.btnAddArtist.Location = new System.Drawing.Point(171, 77);
             this.btnAddArtist.Name = "btnAddArtist";
             this.btnAddArtist.Size = new System.Drawing.Size(75, 23);
             this.btnAddArtist.TabIndex = 26;
@@ -300,16 +317,16 @@
             this.gbAddArtist.Controls.Add(this.tbAName);
             this.gbAddArtist.Location = new System.Drawing.Point(550, 356);
             this.gbAddArtist.Name = "gbAddArtist";
-            this.gbAddArtist.Size = new System.Drawing.Size(268, 122);
+            this.gbAddArtist.Size = new System.Drawing.Size(252, 122);
             this.gbAddArtist.TabIndex = 28;
             this.gbAddArtist.TabStop = false;
             this.gbAddArtist.Text = "Add Artist";
             // 
             // dtpDateArtist
             // 
-            this.dtpDateArtist.Location = new System.Drawing.Point(68, 57);
+            this.dtpDateArtist.Location = new System.Drawing.Point(58, 53);
             this.dtpDateArtist.Name = "dtpDateArtist";
-            this.dtpDateArtist.Size = new System.Drawing.Size(184, 20);
+            this.dtpDateArtist.Size = new System.Drawing.Size(188, 20);
             this.dtpDateArtist.TabIndex = 28;
             // 
             // groupBox1
@@ -326,6 +343,7 @@
             // 
             // btnPCreate
             // 
+            this.btnPCreate.Enabled = false;
             this.btnPCreate.Location = new System.Drawing.Point(159, 56);
             this.btnPCreate.Name = "btnPCreate";
             this.btnPCreate.Size = new System.Drawing.Size(75, 23);
@@ -349,6 +367,7 @@
             this.tbPName.Name = "tbPName";
             this.tbPName.Size = new System.Drawing.Size(168, 20);
             this.tbPName.TabIndex = 19;
+            this.tbPName.TextChanged += new System.EventHandler(this.tbPName_TextChanged);
             // 
             // groupBox2
             // 
@@ -365,11 +384,14 @@
             // 
             // cbASPPlaylistName
             // 
+            this.cbASPPlaylistName.Enabled = false;
             this.cbASPPlaylistName.FormattingEnabled = true;
             this.cbASPPlaylistName.Location = new System.Drawing.Point(88, 32);
             this.cbASPPlaylistName.Name = "cbASPPlaylistName";
             this.cbASPPlaylistName.Size = new System.Drawing.Size(148, 21);
             this.cbASPPlaylistName.TabIndex = 18;
+            this.cbASPPlaylistName.DropDown += new System.EventHandler(this.cbASPPlaylistName_DropDown);
+            this.cbASPPlaylistName.SelectedIndexChanged += new System.EventHandler(this.cbASPPlaylistName_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -390,6 +412,7 @@
             // 
             // btnPAddSong
             // 
+            this.btnPAddSong.Enabled = false;
             this.btnPAddSong.Location = new System.Drawing.Point(161, 62);
             this.btnPAddSong.Name = "btnPAddSong";
             this.btnPAddSong.Size = new System.Drawing.Size(75, 23);
@@ -435,6 +458,7 @@
             this.cbPRemove.Name = "cbPRemove";
             this.cbPRemove.Size = new System.Drawing.Size(148, 21);
             this.cbPRemove.TabIndex = 18;
+            this.cbPRemove.DropDown += new System.EventHandler(this.cbPRemove_DropDown);
             // 
             // label4
             // 
@@ -455,6 +479,7 @@
             // 
             // btnPRemove
             // 
+            this.btnPRemove.Enabled = false;
             this.btnPRemove.Location = new System.Drawing.Point(161, 62);
             this.btnPRemove.Name = "btnPRemove";
             this.btnPRemove.Size = new System.Drawing.Size(75, 23);
@@ -463,11 +488,76 @@
             this.btnPRemove.UseVisualStyleBackColor = true;
             this.btnPRemove.Click += new System.EventHandler(this.btnPRemove_Click);
             // 
+            // gbRemoveSongFromPlaylist
+            // 
+            this.gbRemoveSongFromPlaylist.Controls.Add(this.btnRSFPRemove);
+            this.gbRemoveSongFromPlaylist.Controls.Add(this.cbRSFPSong);
+            this.gbRemoveSongFromPlaylist.Controls.Add(this.label9);
+            this.gbRemoveSongFromPlaylist.Controls.Add(this.cbRSFPPlaylist);
+            this.gbRemoveSongFromPlaylist.Controls.Add(this.label8);
+            this.gbRemoveSongFromPlaylist.Location = new System.Drawing.Point(807, 356);
+            this.gbRemoveSongFromPlaylist.Name = "gbRemoveSongFromPlaylist";
+            this.gbRemoveSongFromPlaylist.Size = new System.Drawing.Size(200, 100);
+            this.gbRemoveSongFromPlaylist.TabIndex = 32;
+            this.gbRemoveSongFromPlaylist.TabStop = false;
+            this.gbRemoveSongFromPlaylist.Text = "Remove Song From Playlist";
+            // 
+            // btnRSFPRemove
+            // 
+            this.btnRSFPRemove.Enabled = false;
+            this.btnRSFPRemove.Location = new System.Drawing.Point(94, 71);
+            this.btnRSFPRemove.Name = "btnRSFPRemove";
+            this.btnRSFPRemove.Size = new System.Drawing.Size(75, 23);
+            this.btnRSFPRemove.TabIndex = 4;
+            this.btnRSFPRemove.Text = "Remove";
+            this.btnRSFPRemove.UseVisualStyleBackColor = true;
+            this.btnRSFPRemove.Click += new System.EventHandler(this.btnRSFPRemove_Click);
+            // 
+            // cbRSFPSong
+            // 
+            this.cbRSFPSong.Enabled = false;
+            this.cbRSFPSong.FormattingEnabled = true;
+            this.cbRSFPSong.Location = new System.Drawing.Point(47, 41);
+            this.cbRSFPSong.Name = "cbRSFPSong";
+            this.cbRSFPSong.Size = new System.Drawing.Size(121, 21);
+            this.cbRSFPSong.TabIndex = 3;
+            this.cbRSFPSong.DropDown += new System.EventHandler(this.cbRSFPSong_DropDown);
+            this.cbRSFPSong.SelectedIndexChanged += new System.EventHandler(this.cbRSFPSong_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 44);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Song:";
+            // 
+            // cbRSFPPlaylist
+            // 
+            this.cbRSFPPlaylist.FormattingEnabled = true;
+            this.cbRSFPPlaylist.Location = new System.Drawing.Point(48, 16);
+            this.cbRSFPPlaylist.Name = "cbRSFPPlaylist";
+            this.cbRSFPPlaylist.Size = new System.Drawing.Size(121, 21);
+            this.cbRSFPPlaylist.TabIndex = 1;
+            this.cbRSFPPlaylist.DropDown += new System.EventHandler(this.cbRSFPPlaylist_DropDown);
+            this.cbRSFPPlaylist.SelectedIndexChanged += new System.EventHandler(this.cbRSFPPlaylist_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Playlist:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1125, 655);
+            this.Controls.Add(this.gbRemoveSongFromPlaylist);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbCurrentPlaylist);
@@ -493,6 +583,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.gbRemoveSongFromPlaylist.ResumeLayout(false);
+            this.gbRemoveSongFromPlaylist.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -540,6 +632,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnPRemove;
         private System.Windows.Forms.DateTimePicker dtpDateArtist;
+        private System.Windows.Forms.GroupBox gbRemoveSongFromPlaylist;
+        private System.Windows.Forms.Button btnRSFPRemove;
+        private System.Windows.Forms.ComboBox cbRSFPSong;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbRSFPPlaylist;
+        private System.Windows.Forms.Label label8;
     }
 }
 
