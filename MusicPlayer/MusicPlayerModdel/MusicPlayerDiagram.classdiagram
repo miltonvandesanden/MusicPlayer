@@ -72,32 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="d4a7796c-383d-40e7-9390-607ba5890762">
-      <profileInstance Id="9b12366a-e151-41c5-aaba-d672a94cf16e" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="020e33ec-a920-4032-935f-2be51f07ca89">
-      <profileInstance Id="2270db55-f2a6-4eb3-90cd-c1e926df4ef1" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="e8d5ba63-88d5-4094-8b56-78528278bc13">
-      <profileInstance Id="0a532ae4-e08f-40d6-921b-b85c4183a506" name="CSharpProfile">
-        <elementDefinition Id="d861941d-b7ae-4f12-b00d-e2bc710f26ad" />
-      </profileInstance>
-      <elementDefinition Id="d00dd1e4-d481-4f32-8b2f-b672793e0579" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="80de125f-ccf1-4935-bfa5-bb2bf4db9563">
-      <profileInstance Id="d870591d-af25-487d-b399-be5f019f92af" name="TextTemplateBindings">
-        <elementDefinition Id="f122d5c7-41a2-439e-9329-834020904e1b" />
-      </profileInstance>
-      <elementDefinition Id="8e70f11c-f01c-4ea3-a812-78fd1e759e9e" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="9c514d04-e0d4-4dbe-a13d-117158e5439d" name="MusicPlayer" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -1737,16 +1711,16 @@
             <elementDefinition Id="a2e96b7d-698c-4182-bbc8-441c4dafd845" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="e672b502-8793-4d39-8ccd-156ad16304de" name="name" direction="In" isUnique="false">
-                  <elementDefinition Id="6e298117-162f-48d5-82fb-71f0a429d571" />
+                <parameter Id="7be0a3aa-b4f1-47c8-bfc8-db068f2c24b5" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="b246507d-a15c-489f-b885-d0e839ed4107" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="c8a3fc9c-2945-459b-8242-e84e5e556bdd" LastKnownName="string" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="e97309fb-9ec6-4513-9e6b-5f4af8b8913e" name="birthdat" direction="In" isUnique="false">
-                  <elementDefinition Id="967aa4a7-d53e-4bdf-970b-76e4b0625afb" />
+                <parameter Id="2515275f-cd09-4c2d-9905-cc8fddd6a07c" name="birthday" direction="In" isUnique="false">
+                  <elementDefinition Id="4d0ce3a6-26e6-46c8-bbff-994f3f2f16a0" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="efa0a9fc-e3df-4b14-9bac-74d53ccfd294" LastKnownName="Date" />
                   </type_NamedElement>
@@ -1887,5 +1861,31 @@
   </packagedElements>
   <package Id="cd7b33d9-8478-4cab-91e7-50db1ed00221" name="MusicPlayerModdel">
     <elementDefinition Id="b3a680b9-fc1b-4480-a835-4e232d1143f2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d4a7796c-383d-40e7-9390-607ba5890762">
+        <profileInstance Id="9b12366a-e151-41c5-aaba-d672a94cf16e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="020e33ec-a920-4032-935f-2be51f07ca89">
+        <profileInstance Id="2270db55-f2a6-4eb3-90cd-c1e926df4ef1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e8d5ba63-88d5-4094-8b56-78528278bc13">
+        <profileInstance Id="0a532ae4-e08f-40d6-921b-b85c4183a506" name="CSharpProfile">
+          <elementDefinition Id="d861941d-b7ae-4f12-b00d-e2bc710f26ad" />
+        </profileInstance>
+        <elementDefinition Id="d00dd1e4-d481-4f32-8b2f-b672793e0579" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="80de125f-ccf1-4935-bfa5-bb2bf4db9563">
+        <profileInstance Id="d870591d-af25-487d-b399-be5f019f92af" name="TextTemplateBindings">
+          <elementDefinition Id="f122d5c7-41a2-439e-9329-834020904e1b" />
+        </profileInstance>
+        <elementDefinition Id="8e70f11c-f01c-4ea3-a812-78fd1e759e9e" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

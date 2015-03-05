@@ -16,5 +16,50 @@ namespace MusicPlayer
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbSArtist_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbAName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbABirthday_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddArtist_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbAddArtist_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

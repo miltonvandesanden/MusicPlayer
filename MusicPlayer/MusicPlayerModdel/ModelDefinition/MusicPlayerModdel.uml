@@ -2352,7 +2352,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="6e298117-162f-48d5-82fb-71f0a429d571"
+                  Id="b246507d-a15c-489f-b885-d0e839ed4107"
                   name="name"
                   direction="In"
                   isUnique="false">
@@ -2366,8 +2366,8 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="967aa4a7-d53e-4bdf-970b-76e4b0625afb"
-                  name="birthdat"
+                  Id="4d0ce3a6-26e6-46c8-bbff-994f3f2f16a0"
+                  name="birthday"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
