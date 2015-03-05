@@ -80,7 +80,7 @@ namespace MusicPlayer
         /// The ToString method returns all the attributes of the Playlist class added together as a string variable with a limiter between each attribute, the limiter being " : "
         /// </summary>
         /// <returns></returns>
-        public string ToString()
+        public override string ToString()
         {
             string playlistString = Name;
 

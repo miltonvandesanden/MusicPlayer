@@ -113,7 +113,6 @@
             // 
             // btnAddSong
             // 
-            this.btnAddSong.Enabled = false;
             this.btnAddSong.Location = new System.Drawing.Point(161, 260);
             this.btnAddSong.Name = "btnAddSong";
             this.btnAddSong.Size = new System.Drawing.Size(75, 23);
@@ -240,7 +239,6 @@
             // 
             // btnAddArtist
             // 
-            this.btnAddArtist.Enabled = false;
             this.btnAddArtist.Location = new System.Drawing.Point(161, 83);
             this.btnAddArtist.Name = "btnAddArtist";
             this.btnAddArtist.Size = new System.Drawing.Size(75, 23);
@@ -328,7 +326,6 @@
             // 
             // btnPCreate
             // 
-            this.btnPCreate.Enabled = false;
             this.btnPCreate.Location = new System.Drawing.Point(159, 56);
             this.btnPCreate.Name = "btnPCreate";
             this.btnPCreate.Size = new System.Drawing.Size(75, 23);
@@ -393,7 +390,6 @@
             // 
             // btnPAddSong
             // 
-            this.btnPAddSong.Enabled = false;
             this.btnPAddSong.Location = new System.Drawing.Point(161, 62);
             this.btnPAddSong.Name = "btnPAddSong";
             this.btnPAddSong.Size = new System.Drawing.Size(75, 23);
@@ -459,7 +455,6 @@
             // 
             // btnPRemove
             // 
-            this.btnPRemove.Enabled = false;
             this.btnPRemove.Location = new System.Drawing.Point(161, 62);
             this.btnPRemove.Name = "btnPRemove";
             this.btnPRemove.Size = new System.Drawing.Size(75, 23);
