@@ -321,7 +321,11 @@ namespace MusicPlayer
             }
             btnPRemove.Enabled = true;
         }
-
+        /// <summary>
+        /// When clicked on the Playbutton there will be a check if the selected item a playlist is. If the item a playlist is the music player will play the list. If the item is a song the player will only play the selected song.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnPlay_Click(object sender, EventArgs e)
         {
             
@@ -355,6 +359,11 @@ namespace MusicPlayer
             
         }
 
+        /// <summary>
+        /// When clicked on the stop button the player will stop current playing song in the player
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnStop_Click(object sender, EventArgs e)
         {
             player.StopPlaying();
@@ -362,6 +371,12 @@ namespace MusicPlayer
             Status.Text = "";
         }
 
+        /// <summary>
+        /// When clicked on the pause button the player will pause current playing song in the player
+        /// Mostly unimplemented
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnPause_Click(object sender, EventArgs e)
         {
             Status.Text = "Paused";
