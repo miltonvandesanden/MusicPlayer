@@ -43,28 +43,28 @@
             {
             }
         }
-    
-        public void Add()
+
+        public void Add(Artist artist)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Add()
+        public void Add(Song song)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Add()
+        public void Add(Playlist playlist)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Play()
+        public void Play(Song song)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Play()
+        public void Play(Playlist platlist)
         {
             throw new System.NotImplementedException();
         }

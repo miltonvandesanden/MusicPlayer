@@ -35,18 +35,18 @@ namespace MusicPlayer
             {
             }
         }
-    
-        public void Add()
+
+        public void Add(Song song)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Add()
+        public void Add(List<Song> songs)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Remove()
+        public void Remove(Song song)
         {
             throw new System.NotImplementedException();
         }

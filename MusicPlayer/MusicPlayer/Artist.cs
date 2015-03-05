@@ -8,8 +8,8 @@ namespace MusicPlayer
     public class Artist
     {
         private int songs;
-    
-        public Artist()
+
+        public Artist(string name, Date birthday)
         {
             throw new System.NotImplementedException();
         }
@@ -35,8 +35,8 @@ namespace MusicPlayer
             {
             }
         }
-    
-        public void Add()
+
+        public void Add(Song song)
         {
             throw new System.NotImplementedException();
         }
