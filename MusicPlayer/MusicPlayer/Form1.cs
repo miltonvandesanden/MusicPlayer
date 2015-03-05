@@ -17,7 +17,6 @@ namespace MusicPlayer
         private List<Song> songs;
         private List<Playlist> playlists;
         private List<Artist> artists;
-        private bool playlistCheck;
 
         /// <summary>
         /// constructors
@@ -30,7 +29,6 @@ namespace MusicPlayer
             songs = player.Songs;
             playlists = player.Playlists;
             artists = player.Artists;
-            playlistCheck = false;
 
         }
 
@@ -249,6 +247,7 @@ namespace MusicPlayer
             }
         }
 
+        //remove Song from playlist
         private void btnRSFPRemove_Click(object sender, EventArgs e)
         {
             string playlistName = Convert.ToString(cbRSFPPlaylist.SelectedItem);
@@ -373,6 +372,72 @@ namespace MusicPlayer
         private void nudSYear_ValueChanged(object sender, EventArgs e)
         {
             rtbLyrics.Enabled = true;
+        }
+
+        /// <summary>
+        /// When clicked on the Playbutton there will be a check if the selected item a playlist is. If the item a playlist is the music player will play the list. If the item is a song the player will only play the selected song.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+
+            string songTag = Convert.ToString(libPlaylist.SelectedItem);
+            songTag = songTag.Substring(0, 1);
+
+            if (songTag == "0")
+            {
+                string playlistName = Convert.ToString(libPlaylist.SelectedItem);
+                playlistName = playlistName.Substring(4, playlistName.Count() - 4);
+
+                foreach (Playlist item in playlists)
+                {
+                    if (item.Name == playlistName)
+                    {
+                        tbCurrentSong.Text = playlistName;
+                        Status.Text = "Playing Playlist: " + playlistName;
+                        player.Play(item);
+                    }
+                }
+            }
+            else if (songTag == "1")
+            {
+                string songName = Convert.ToString(libPlaylist.SelectedItem);
+                songName = songName.Substring(4, songName.IndexOf("#") - (songName.IndexOf(":") + 3));
+                foreach (Song item in songs)
+                {
+                    if (item.Name == songName)
+                    {
+                        tbCurrentSong.Text = songName;
+                        Status.Text = "Playing";
+                        player.Play(item);
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// When clicked on the stop button the player will stop current playing song in the player
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            player.StopPlaying();
+            tbCurrentSong.Text = "";
+            Status.Text = "";
+        }
+
+        /// <summary>
+        /// When clicked on the pause button the player will pause current playing song in the player
+        /// Mostly unimplemented
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            Status.Text = "Paused";
+            //todo create real pause function here
         }
     }
 }

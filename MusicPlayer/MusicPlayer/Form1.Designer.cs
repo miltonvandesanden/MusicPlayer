@@ -72,8 +72,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.cbRSFPPlaylist = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCurrentSong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.Status = new System.Windows.Forms.Label();
             this.gbAddSong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSYear)).BeginInit();
             this.gbAddArtist.SuspendLayout();
@@ -100,6 +101,7 @@
             this.btnPlay.TabIndex = 1;
             this.btnPlay.Text = "Play";
             this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // btnStop
             // 
@@ -109,6 +111,7 @@
             this.btnStop.TabIndex = 2;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnPause
             // 
@@ -118,6 +121,7 @@
             this.btnPause.TabIndex = 3;
             this.btnPause.Text = "Pause";
             this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
             // btnAddSong
             // 
@@ -539,12 +543,12 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Playlist:";
             // 
-            // textBox1
+            // tbCurrentSong
             // 
-            this.textBox1.Location = new System.Drawing.Point(631, 511);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
-            this.textBox1.TabIndex = 33;
+            this.tbCurrentSong.Location = new System.Drawing.Point(631, 511);
+            this.tbCurrentSong.Name = "tbCurrentSong";
+            this.tbCurrentSong.Size = new System.Drawing.Size(156, 20);
+            this.tbCurrentSong.TabIndex = 33;
             // 
             // label3
             // 
@@ -555,13 +559,23 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "Current song:";
             // 
+            // Status
+            // 
+            this.Status.AutoSize = true;
+            this.Status.Location = new System.Drawing.Point(794, 513);
+            this.Status.Name = "Status";
+            this.Status.Size = new System.Drawing.Size(10, 13);
+            this.Status.TabIndex = 35;
+            this.Status.Text = " ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1125, 549);
+            this.Controls.Add(this.Status);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbCurrentSong);
             this.Controls.Add(this.gbRemoveSongFromPlaylist);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -639,8 +653,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbRSFPPlaylist;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCurrentSong;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Status;
     }
 }
 
