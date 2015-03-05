@@ -484,7 +484,7 @@
             this.btnPRemove.Name = "btnPRemove";
             this.btnPRemove.Size = new System.Drawing.Size(75, 23);
             this.btnPRemove.TabIndex = 4;
-            this.btnPRemove.Text = "Add";
+            this.btnPRemove.Text = "Remove";
             this.btnPRemove.UseVisualStyleBackColor = true;
             this.btnPRemove.Click += new System.EventHandler(this.btnPRemove_Click);
             // 
@@ -497,7 +497,7 @@
             this.gbRemoveSongFromPlaylist.Controls.Add(this.label8);
             this.gbRemoveSongFromPlaylist.Location = new System.Drawing.Point(807, 356);
             this.gbRemoveSongFromPlaylist.Name = "gbRemoveSongFromPlaylist";
-            this.gbRemoveSongFromPlaylist.Size = new System.Drawing.Size(200, 100);
+            this.gbRemoveSongFromPlaylist.Size = new System.Drawing.Size(253, 122);
             this.gbRemoveSongFromPlaylist.TabIndex = 32;
             this.gbRemoveSongFromPlaylist.TabStop = false;
             this.gbRemoveSongFromPlaylist.Text = "Remove Song From Playlist";
@@ -505,7 +505,7 @@
             // btnRSFPRemove
             // 
             this.btnRSFPRemove.Enabled = false;
-            this.btnRSFPRemove.Location = new System.Drawing.Point(94, 71);
+            this.btnRSFPRemove.Location = new System.Drawing.Point(160, 77);
             this.btnRSFPRemove.Name = "btnRSFPRemove";
             this.btnRSFPRemove.Size = new System.Drawing.Size(75, 23);
             this.btnRSFPRemove.TabIndex = 4;
@@ -517,7 +517,7 @@
             // 
             this.cbRSFPSong.Enabled = false;
             this.cbRSFPSong.FormattingEnabled = true;
-            this.cbRSFPSong.Location = new System.Drawing.Point(47, 41);
+            this.cbRSFPSong.Location = new System.Drawing.Point(114, 44);
             this.cbRSFPSong.Name = "cbRSFPSong";
             this.cbRSFPSong.Size = new System.Drawing.Size(121, 21);
             this.cbRSFPSong.TabIndex = 3;
@@ -536,9 +536,9 @@
             // cbRSFPPlaylist
             // 
             this.cbRSFPPlaylist.FormattingEnabled = true;
-            this.cbRSFPPlaylist.Location = new System.Drawing.Point(48, 16);
+            this.cbRSFPPlaylist.Location = new System.Drawing.Point(114, 17);
             this.cbRSFPPlaylist.Name = "cbRSFPPlaylist";
-            this.cbRSFPPlaylist.Size = new System.Drawing.Size(121, 21);
+            this.cbRSFPPlaylist.Size = new System.Drawing.Size(123, 21);
             this.cbRSFPPlaylist.TabIndex = 1;
             this.cbRSFPPlaylist.DropDown += new System.EventHandler(this.cbRSFPPlaylist_DropDown);
             this.cbRSFPPlaylist.SelectedIndexChanged += new System.EventHandler(this.cbRSFPPlaylist_SelectedIndexChanged);

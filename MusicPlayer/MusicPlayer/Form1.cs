@@ -75,6 +75,7 @@ namespace MusicPlayer
         private void btnPCreate_Click(object sender, EventArgs e)
         {
             player.Add(new Playlist(tbPName.Text));
+            tbPName.Text = "";
             RefreshSongList(songs, playlists);
         }
 
@@ -121,18 +122,25 @@ namespace MusicPlayer
                     }
                 }
             }
+            cbASPPlaylistName.Text = "";
+            RefreshSongList(songs, playlists);
         }
 
         //Remove playlist
         private void btnPRemove_Click(object sender, EventArgs e)
         {
-            foreach (Playlist playlist in playlists)
+            int i = 0;
+            foreach (Playlist playlist in playlists.ToList())
             {
                 if (cbPRemove.Text == playlist.Name)
                 {
-                    playlists.Remove(playlist);
+                    playlists.RemoveAt(i);
                 }
+                i++;
             }
+
+            cbPRemove.Text = "";
+            RefreshSongList(songs, playlists);
         }
 
         //Refresh SongList List
@@ -295,6 +303,7 @@ namespace MusicPlayer
             {
                 cbPRemove.Items.Add(playlist.Name);
             }
+            btnPRemove.Enabled = true;
         }
     }
 }

@@ -36,6 +36,7 @@ namespace MusicPlayer
         public Playlist(string name)
         {
             Name = name;
+            Songs = new List<Song>();
         }
 
         //methods
