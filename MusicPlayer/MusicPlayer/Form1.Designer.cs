@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbPlaylist = new System.Windows.Forms.ListBox();
+            this.libPlaylist = new System.Windows.Forms.ListBox();
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnPause = new System.Windows.Forms.Button();
@@ -64,7 +64,7 @@
             this.cbCurrentPlaylist = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbPRemove = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnPRemove = new System.Windows.Forms.Button();
@@ -76,13 +76,13 @@
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lbPlaylist
+            // libPlaylist
             // 
-            this.lbPlaylist.FormattingEnabled = true;
-            this.lbPlaylist.Location = new System.Drawing.Point(12, 12);
-            this.lbPlaylist.Name = "lbPlaylist";
-            this.lbPlaylist.Size = new System.Drawing.Size(532, 524);
-            this.lbPlaylist.TabIndex = 0;
+            this.libPlaylist.FormattingEnabled = true;
+            this.libPlaylist.Location = new System.Drawing.Point(12, 12);
+            this.libPlaylist.Name = "libPlaylist";
+            this.libPlaylist.Size = new System.Drawing.Size(532, 524);
+            this.libPlaylist.TabIndex = 0;
             // 
             // btnPlay
             // 
@@ -421,7 +421,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.cbPRemove);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.btnPRemove);
@@ -432,13 +432,13 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Remove Playlist";
             // 
-            // comboBox1
+            // cbPRemove
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(88, 32);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(148, 21);
-            this.comboBox1.TabIndex = 18;
+            this.cbPRemove.FormattingEnabled = true;
+            this.cbPRemove.Location = new System.Drawing.Point(88, 32);
+            this.cbPRemove.Name = "cbPRemove";
+            this.cbPRemove.Size = new System.Drawing.Size(148, 21);
+            this.cbPRemove.TabIndex = 18;
             // 
             // label4
             // 
@@ -483,7 +483,7 @@
             this.Controls.Add(this.btnPause);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnPlay);
-            this.Controls.Add(this.lbPlaylist);
+            this.Controls.Add(this.libPlaylist);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -505,7 +505,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox lbPlaylist;
+        private System.Windows.Forms.ListBox libPlaylist;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Button btnPause;
@@ -540,7 +540,7 @@
         private System.Windows.Forms.ComboBox cbCurrentPlaylist;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbPRemove;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnPRemove;

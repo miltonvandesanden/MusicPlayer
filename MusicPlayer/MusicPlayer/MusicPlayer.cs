@@ -15,37 +15,37 @@ namespace MusicPlayer
 
         public void Add(Artist artist)
         {
-            throw new System.NotImplementedException();
+            Artists.Add(artist);
         }
 
         public void Add(Song song)
         {
-            throw new System.NotImplementedException();
+           Songs.Add(song);          
         }
 
         public void Add(Playlist playlist)
         {
-            throw new System.NotImplementedException();
+            Playlists.Add(playlist);
         }
 
         public void Play(Song song)
         {
-            throw new System.NotImplementedException();
+            //todo
         }
 
         public void Play(Playlist platlist)
         {
-            throw new System.NotImplementedException();
+            //todo
         }
 
         public void Playing()
         {
-            throw new System.NotImplementedException();
+            //todo
         }
 
         public void StopPlaying()
         {
-            throw new System.NotImplementedException();
+            //todo
         }
     }
 }

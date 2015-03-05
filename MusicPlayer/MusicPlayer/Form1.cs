@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using 
 
 namespace MusicPlayer
 {
@@ -36,25 +35,36 @@ namespace MusicPlayer
         //Add Song to List
         private void btnAddSong_Click(object sender, EventArgs e)
         {
-            player.Add(new Song(tbSName.Text, (int)nudSYear.Value, (Artist)cbSArtist.Text, tbSPath.Text, rtbLyrics.Text));
+            Artist sArtist;
+            foreach (Artist artist in artists)
+            {
+                if(cbSArtist.Text == artist.Name)
+                {
+                    sArtist = artist;
+                    player.Add(new Song(tbSName.Text, (int)nudSYear.Value, sArtist, tbSPath.Text, rtbLyrics.Text));
+                }
+            }
+            RefreshSongList(songs, playlists);
         }
 
         //Add Artist
         private void btnAddArtist_Click(object sender, EventArgs e)
         {
-        player.Add(new Artist(tbAName.Text, Convert.ToDateTime(dtpDateArtist)));
+            player.Add(new Artist(tbAName.Text, Convert.ToDateTime(dtpDateArtist)));
+            RefreshSongList(songs, playlists);
         }
 
         //Create Playlist
         private void btnPCreate_Click(object sender, EventArgs e)
         {
             player.Add(new Playlist(tbPName.Text));
+            RefreshSongList(songs, playlists);
         }
 
         //Add Song to Playlist
         private void btnPAddSong_Click(object sender, EventArgs e)
         {
-            string songsName = lbPlaylist.SelectedItem.ToString();
+            string songsName = libPlaylist.SelectedItem.ToString();
             string playlistName = cbASPPlaylistName.ToString();
             foreach (Playlist playlist in playlists)
             {
@@ -74,7 +84,30 @@ namespace MusicPlayer
         //Remove playlist
         private void btnPRemove_Click(object sender, EventArgs e)
         {
-        
+            foreach (Playlist playlist in playlists)
+            {
+                if (cbPRemove.Text == playlist.Name)
+                {
+                    playlists.Remove(playlist);
+                }
+            }
         }
+
+        //Refresh SongList List
+        public void RefreshSongList(List<Song> songs, List<Playlist> playlists)
+        {
+            libPlaylist.Items.Clear();
+
+            foreach (Playlist playlist in playlists)
+            {
+                libPlaylist.Items.Add(playlist.Name);
+            }
+
+            foreach (Song song in songs)
+            {
+                libPlaylist.Items.Add(song);
+            }
+        }
+
     }
 }
