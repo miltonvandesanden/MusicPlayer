@@ -61,8 +61,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnPAddSong = new System.Windows.Forms.Button();
-            this.cbCurrentPlaylist = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbPRemove = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -74,6 +72,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.cbRSFPPlaylist = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.gbAddSong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSYear)).BeginInit();
             this.gbAddArtist.SuspendLayout();
@@ -94,7 +94,7 @@
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(12, 553);
+            this.btnPlay.Location = new System.Drawing.Point(550, 484);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(75, 23);
             this.btnPlay.TabIndex = 1;
@@ -103,7 +103,7 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(174, 553);
+            this.btnStop.Location = new System.Drawing.Point(631, 484);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 23);
             this.btnStop.TabIndex = 2;
@@ -112,7 +112,7 @@
             // 
             // btnPause
             // 
-            this.btnPause.Location = new System.Drawing.Point(93, 553);
+            this.btnPause.Location = new System.Drawing.Point(712, 484);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(75, 23);
             this.btnPause.TabIndex = 3;
@@ -421,23 +421,6 @@
             this.btnPAddSong.UseVisualStyleBackColor = true;
             this.btnPAddSong.Click += new System.EventHandler(this.btnPAddSong_Click);
             // 
-            // cbCurrentPlaylist
-            // 
-            this.cbCurrentPlaylist.FormattingEnabled = true;
-            this.cbCurrentPlaylist.Location = new System.Drawing.Point(423, 553);
-            this.cbCurrentPlaylist.Name = "cbCurrentPlaylist";
-            this.cbCurrentPlaylist.Size = new System.Drawing.Size(121, 21);
-            this.cbCurrentPlaylist.TabIndex = 30;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(341, 558);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Current Playlist";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.cbPRemove);
@@ -552,15 +535,31 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Playlist:";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(631, 511);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(156, 20);
+            this.textBox1.TabIndex = 33;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(551, 514);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "Current song:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 655);
+            this.ClientSize = new System.Drawing.Size(1125, 549);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.gbRemoveSongFromPlaylist);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.cbCurrentPlaylist);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbAddArtist);
@@ -624,8 +623,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnPAddSong;
-        private System.Windows.Forms.ComboBox cbCurrentPlaylist;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox cbPRemove;
         private System.Windows.Forms.Label label4;
@@ -638,6 +635,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbRSFPPlaylist;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

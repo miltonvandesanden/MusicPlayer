@@ -16,3 +16,12 @@ C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer
 C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.GenerateResource.Cache
 C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.exe
 C:\Users\Kevin van der Burg\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.pdb
+C:\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.exe.config
+C:\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.exe
+C:\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.pdb
+C:\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.exe
+C:\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.pdb
+C:\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csprojResolveAssemblyReference.cache
+C:\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.Form1.resources
+C:\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.Properties.Resources.resources
+C:\GitHub\MusicPlayer\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.GenerateResource.Cache
