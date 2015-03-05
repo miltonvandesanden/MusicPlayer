@@ -3,14 +3,9 @@
   <Class Name="MusicPlayer.MusicPlayer">
     <Position X="2.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIQAAAAAAAAAAQQAAAAgAgIAIAAAAAAgAAAAAAAEAA=</HashCode>
+      <HashCode>AAIQAAAAAAAAAAAQAAAEAAAIAAAAAAAAgEAAAAAAAAA=</HashCode>
       <FileName>MusicPlayer.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Song" />
-      <Property Name="Playlist" />
-      <Property Name="Artist" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="MusicPlayer.Song">
     <Position X="6" Y="1.75" Width="1.5" />

@@ -51,6 +51,7 @@
             this.gbAddSong = new System.Windows.Forms.GroupBox();
             this.nudSYear = new System.Windows.Forms.NumericUpDown();
             this.gbAddArtist = new System.Windows.Forms.GroupBox();
+            this.dtpDateArtist = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnPCreate = new System.Windows.Forms.Button();
             this.lbPName = new System.Windows.Forms.Label();
@@ -67,7 +68,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btnPRemove = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.gbAddSong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSYear)).BeginInit();
             this.gbAddArtist.SuspendLayout();
@@ -120,6 +120,7 @@
             this.btnAddSong.TabIndex = 4;
             this.btnAddSong.Text = "Add";
             this.btnAddSong.UseVisualStyleBackColor = true;
+            this.btnAddSong.Click += new System.EventHandler(this.btnAddSong_Click);
             // 
             // tbSName
             // 
@@ -151,7 +152,6 @@
             this.lbSName.Size = new System.Drawing.Size(35, 13);
             this.lbSName.TabIndex = 11;
             this.lbSName.Text = "Name";
-            this.lbSName.Click += new System.EventHandler(this.label2_Click);
             // 
             // lbSYear
             // 
@@ -196,7 +196,6 @@
             this.lbSArtist.Size = new System.Drawing.Size(30, 13);
             this.lbSArtist.TabIndex = 17;
             this.lbSArtist.Text = "Artist";
-            this.lbSArtist.Click += new System.EventHandler(this.lbSArtist_Click);
             // 
             // cbSArtist
             // 
@@ -214,7 +213,6 @@
             this.lbABirthday.Size = new System.Drawing.Size(45, 13);
             this.lbABirthday.TabIndex = 23;
             this.lbABirthday.Text = "Birthday";
-            this.lbABirthday.Click += new System.EventHandler(this.lbABirthday_Click);
             // 
             // label5
             // 
@@ -232,7 +230,6 @@
             this.lbAName.Size = new System.Drawing.Size(35, 13);
             this.lbAName.TabIndex = 21;
             this.lbAName.Text = "Name";
-            this.lbAName.Click += new System.EventHandler(this.lbAName_Click);
             // 
             // tbAName
             // 
@@ -240,7 +237,6 @@
             this.tbAName.Name = "tbAName";
             this.tbAName.Size = new System.Drawing.Size(184, 20);
             this.tbAName.TabIndex = 20;
-            this.tbAName.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // btnAddArtist
             // 
@@ -298,7 +294,7 @@
             // 
             // gbAddArtist
             // 
-            this.gbAddArtist.Controls.Add(this.dateTimePicker1);
+            this.gbAddArtist.Controls.Add(this.dtpDateArtist);
             this.gbAddArtist.Controls.Add(this.btnAddArtist);
             this.gbAddArtist.Controls.Add(this.lbABirthday);
             this.gbAddArtist.Controls.Add(this.label5);
@@ -310,7 +306,13 @@
             this.gbAddArtist.TabIndex = 28;
             this.gbAddArtist.TabStop = false;
             this.gbAddArtist.Text = "Add Artist";
-            this.gbAddArtist.Enter += new System.EventHandler(this.gbAddArtist_Enter);
+            // 
+            // dtpDateArtist
+            // 
+            this.dtpDateArtist.Location = new System.Drawing.Point(68, 57);
+            this.dtpDateArtist.Name = "dtpDateArtist";
+            this.dtpDateArtist.Size = new System.Drawing.Size(184, 20);
+            this.dtpDateArtist.TabIndex = 28;
             // 
             // groupBox1
             // 
@@ -333,6 +335,7 @@
             this.btnPCreate.TabIndex = 28;
             this.btnPCreate.Text = "Create";
             this.btnPCreate.UseVisualStyleBackColor = true;
+            this.btnPCreate.Click += new System.EventHandler(this.btnPCreate_Click);
             // 
             // lbPName
             // 
@@ -397,6 +400,7 @@
             this.btnPAddSong.TabIndex = 4;
             this.btnPAddSong.Text = "Add";
             this.btnPAddSong.UseVisualStyleBackColor = true;
+            this.btnPAddSong.Click += new System.EventHandler(this.btnPAddSong_Click);
             // 
             // cbCurrentPlaylist
             // 
@@ -462,13 +466,7 @@
             this.btnPRemove.TabIndex = 4;
             this.btnPRemove.Text = "Add";
             this.btnPRemove.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(68, 57);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(184, 20);
-            this.dateTimePicker1.TabIndex = 28;
+            this.btnPRemove.Click += new System.EventHandler(this.btnPRemove_Click);
             // 
             // Form1
             // 
@@ -546,7 +544,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnPRemove;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDateArtist;
     }
 }
 

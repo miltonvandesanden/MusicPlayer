@@ -1,48 +1,17 @@
-﻿namespace MusicPlayer
+﻿using System.Collections.Generic;
+
+namespace MusicPlayer
 {
     public class MusicPlayer
     {
-        private int artist;
-        private int playlists;
-        private int songs;
-    
+
         public MusicPlayer()
         {
-            throw new System.NotImplementedException();
         }
 
-        public Song Song
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public Playlist Playlist
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public Artist Artist
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public List<Song> Songs { get; set; }
+        public List<Playlist> Playlists { get; set; }
+        public List<Artist> Artists { get; set; }
 
         public void Add(Artist artist)
         {

@@ -13,15 +13,18 @@ namespace MusicPlayer
 {
     public partial class Form1 : Form
     {
+        private MusicPlayer player;
+        private List<Song> songs;
+        private List<Playlist> playlists;
+        private List<Artist> artists; 
         public Form1()
         {
             InitializeComponent();
-            MusicPlayer Player = new MusicPlayer();
+            player = new MusicPlayer();
 
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
+            songs = player.Songs;
+            playlists = player.Playlists;
+            artists = player.Artists;
 
         }
 
@@ -30,39 +33,48 @@ namespace MusicPlayer
 
         }
 
-        private void lbSArtist_Click(object sender, EventArgs e)
+        //Add Song to List
+        private void btnAddSong_Click(object sender, EventArgs e)
         {
-
+            player.Add(new Song(tbSName.Text, (int)nudSYear.Value, (Artist)cbSArtist.Text, tbSPath.Text, rtbLyrics.Text));
         }
 
-        private void lbAName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbABirthday_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        //Add Artist
         private void btnAddArtist_Click(object sender, EventArgs e)
         {
-
+        player.Add(new Artist(tbAName.Text, Convert.ToDateTime(dtpDateArtist)));
         }
 
-        private void gbAddArtist_Enter(object sender, EventArgs e)
+        //Create Playlist
+        private void btnPCreate_Click(object sender, EventArgs e)
         {
+            player.Add(new Playlist(tbPName.Text));
+        }
 
+        //Add Song to Playlist
+        private void btnPAddSong_Click(object sender, EventArgs e)
+        {
+            string songsName = lbPlaylist.SelectedItem.ToString();
+            string playlistName = cbASPPlaylistName.ToString();
+            foreach (Playlist playlist in playlists)
+            {
+                if (playlistName == playlist.Name)
+                {
+                    foreach (Song song in songs)
+                    {
+                        if (songsName == song.Name)
+                        {
+                            playlist.Add(song);
+                        }
+                    }
+                }
+            }
+        }
+
+        //Remove playlist
+        private void btnPRemove_Click(object sender, EventArgs e)
+        {
+        
         }
     }
 }
