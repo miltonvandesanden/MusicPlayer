@@ -68,7 +68,7 @@ namespace MusicPlayer
         /// <param name="song"></param>
         public void Remove(Song song)
         {
-            foreach (Song noise in Songs)
+            foreach (Song noise in Songs.ToList())
             {
                 if (noise.Name == song.Name)
                 {

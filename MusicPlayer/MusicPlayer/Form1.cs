@@ -82,11 +82,13 @@ namespace MusicPlayer
         //Add Song to Playlist
         private void btnPAddSong_Click(object sender, EventArgs e)
         {
-            string playlistName = cbASPPlaylistName.ToString();
+            string playlistName = Convert.ToString(cbASPPlaylistName.Text);
 
             if (libPlaylist.SelectedItems.Count == 1)
             {
-                string songName = libPlaylist.SelectedItem.ToString();
+                string songName = Convert.ToString(libPlaylist.SelectedItem);
+                songName = songName.Substring(0, songName.IndexOf(" :"));
+
                 foreach (Playlist playlist in playlists)
                 {
                     if (playlistName == playlist.Name)
@@ -173,6 +175,8 @@ namespace MusicPlayer
 
         private void cbRSFPPlaylist_DropDown(object sender, EventArgs e)
         {
+            cbRSFPPlaylist.Items.Clear();
+
             foreach (Playlist playlist in playlists)
             {
                 cbRSFPPlaylist.Items.Add(playlist.Name);
@@ -181,6 +185,8 @@ namespace MusicPlayer
 
         private void cbRSFPSong_DropDown(object sender, EventArgs e)
         {
+            cbRSFPSong.Items.Clear();
+
             foreach (Playlist playlist in playlists)
             {
                 if (playlist.Name == Convert.ToString(cbRSFPPlaylist.SelectedItem))
@@ -207,19 +213,29 @@ namespace MusicPlayer
 
         private void btnRSFPRemove_Click(object sender, EventArgs e)
         {
+            string playlistName = Convert.ToString(cbRSFPPlaylist.SelectedItem);
+
             foreach (Playlist playlist in playlists)
             {
-                if (playlist.Name == Convert.ToString(cbRSFPPlaylist.SelectedItem))
+                if (playlist.Name == playlistName)
                 {
                     foreach (Song song in songs)
                     {
-                        if (song.Name == Convert.ToString(cbRSFPSong.SelectedItem))
+                        string songName = Convert.ToString(cbRSFPSong.SelectedItem);
+                        songName = songName.Substring(0, songName.IndexOf(" :"));
+                        if (song.Name == songName)
                         {
                             playlist.Remove(song);
                         }
                     }
                 }
             }
+            RefreshSongList(songs, playlists);
+
+            cbRSFPPlaylist.Items.Clear();
+            cbRSFPSong.Items.Clear();
+            cbRSFPPlaylist.Text = "";
+            cbRSFPSong.Text = "";
         }
 
         private void cbSArtist_DropDown(object sender, EventArgs e)
