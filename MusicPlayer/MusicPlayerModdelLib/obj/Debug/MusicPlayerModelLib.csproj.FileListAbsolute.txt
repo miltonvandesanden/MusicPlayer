@@ -1,0 +1,5 @@
+C:\Users\milton\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\bin\Debug\MusicPlayerModdelLib.dll
+C:\Users\milton\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\bin\Debug\MusicPlayerModdelLib.pdb
+C:\Users\milton\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\obj\Debug\MusicPlayerModelLib.csprojResolveAssemblyReference.cache
+C:\Users\milton\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\obj\Debug\MusicPlayerModdelLib.dll
+C:\Users\milton\Documents\GitHub\MusicPlayer\MusicPlayer\MusicPlayerModdelLib\obj\Debug\MusicPlayerModdelLib.pdb

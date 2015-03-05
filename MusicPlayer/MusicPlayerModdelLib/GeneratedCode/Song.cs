@@ -11,37 +11,48 @@ using System.Text;
 
 public class Song
 {
-	public virtual string Name
+    //fields
+    private Artist artist;
+
+    //properties
+	public string Name
 	{
 		get;
 		set;
 	}
 
-	public virtual int Year
+	public int Year
 	{
 		get;
 		set;
 	}
 
-	public virtual string PathToFile
+	public string PathToFile
 	{
 		get;
 		set;
 	}
 
-	public virtual string Lyrics
+	public string Lyrics
 	{
 		get;
 		set;
 	}
 
-	public Song(object name string, int year, Artist artist, string pathOfFile)
+    //constructors
+	public Song(string name, int year, Artist artist, string pathOfFile, string lyrics)
 	{
+	    Name = name;
+	    Year = year;
+	    this.artist = artist;
+	    PathToFile = pathOfFile;
+	    Lyrics = lyrics;
 	}
-
-	public virtual string ToSrting()
+    
+    //methods
+	public override string ToString()
 	{
-		throw new System.NotImplementedException();
+	    return Name + " : " + Year + " : " + artist + " : " + PathToFile + " : " + Lyrics;
 	}
 
 }

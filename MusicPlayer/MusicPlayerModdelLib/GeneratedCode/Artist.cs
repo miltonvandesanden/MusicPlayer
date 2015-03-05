@@ -11,31 +11,44 @@ using System.Text;
 
 public class Artist
 {
-	public virtual string Name
+    //fields
+    private List<Song> songs; 
+
+    //properties
+	public string Name
+	{
+		get;
+        set;
+	}
+
+	public DateTime Birthday
 	{
 		get;
 		set;
 	}
 
-	public virtual Date Birthday
+    //constructors
+	public Artist(string name, DateTime birthday)
 	{
-		get;
-		set;
+	    Name = name;
+	    Birthday = birthday;
 	}
 
-	public Artist(string name, Date birthdat)
+    //methods
+	public void Add(Song song)
 	{
+        songs.Add(song);
 	}
 
-	public virtual void Add(Song song)
+	public override string ToString()
 	{
-		throw new System.NotImplementedException();
-	}
+	    string artistString =  Name + " : " + Birthday;
 
-	public virtual string ToString()
-	{
-		throw new System.NotImplementedException();
-	}
+	    foreach (Song song in songs)
+	    {
+	        artistString += " : " + song.Name;
+	    }
 
+	    return artistString;
+	}
 }
-
